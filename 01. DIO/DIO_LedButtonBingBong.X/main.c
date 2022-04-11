@@ -20,11 +20,14 @@
 #define PIND (*((volatile unsigned char *) 0x30))
 
 #define LED_COUNT 8
-#define TRUE_CLICK 300
+#define TRUE_CLICK 100
 #define START 0xFF
 #define RIGHT_MOVE_BUTTON 2
 #define LEFT_MOVE_BUTTON 3
-#define DELAY_LIMIT 500
+#define DELAY_LIMIT 300
+#define ITERATION 5
+
+typedef unsigned char size_t;
 
 int main(void)
 {
@@ -35,9 +38,10 @@ int main(void)
     unsigned long bufferB = 0;
     while (1)
     {
-        while (BIT_GET(PIND, RIGHT_MOVE_BUTTON))
+        while (!BIT_GET(PIND, RIGHT_MOVE_BUTTON))
         {
             bufferA += 1;
+            _delay_ms(1);
             if (bufferA >= TRUE_CLICK)
             {
                 break;
@@ -49,12 +53,20 @@ int main(void)
             led += 1;
             led = ((led == LED_COUNT) ? 0 : led);
             BIT_SET(PORTB, led);
-            _delay_ms(DELAY_LIMIT);
+            for (size_t i = 0; i < ITERATION; i++)
+            {
+                _delay_ms(DELAY_LIMIT / ITERATION);
+                if (!BIT_GET(PIND, RIGHT_MOVE_BUTTON) || !BIT_GET(PIND, LEFT_MOVE_BUTTON))
+                {
+                    continue;
+                }
+            }
         }
         
-        while(BIT_GET(PIND, LEFT_MOVE_BUTTON))
+        while(!BIT_GET(PIND, LEFT_MOVE_BUTTON))
         {
             bufferB += 1;
+            _delay_ms(1);
             if (bufferB >= TRUE_CLICK)
             {
                 break;
@@ -66,7 +78,14 @@ int main(void)
             led -= 1;
             led = ((led == START) ? (LED_COUNT - 1) : led);
             BIT_SET(PORTB, led);
-            _delay_ms(DELAY_LIMIT);
+            for (size_t i = 0; i < ITERATION; i++)
+            {
+                _delay_ms(DELAY_LIMIT / ITERATION);
+                if (!BIT_GET(PIND, RIGHT_MOVE_BUTTON) || !BIT_GET(PIND, LEFT_MOVE_BUTTON))
+                {
+                    continue;
+                }
+            }
         }
         
         bufferA = 0;

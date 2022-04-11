@@ -20,7 +20,7 @@
 #define PIND (*((volatile unsigned char *) 0x30))
 
 #define LED_COUNT 8
-#define TRUE_CLICK 280
+#define TRUE_CLICK 100
 #define START 0
 #define ORDER_BUTTON 2
 #define DELAY_LIMIT 50
@@ -37,9 +37,10 @@ int main(void)
     unsigned char led = LED_COUNT;
     while (1)
     {
-        while (BIT_GET(PIND, ORDER_BUTTON))
+        while (!BIT_GET(PIND, ORDER_BUTTON))
         {
             buffer += 1;
+            _delay_ms(1);
             if (buffer >= TRUE_CLICK)
             {
                 break;
@@ -48,7 +49,7 @@ int main(void)
         
         if (buffer >= TRUE_CLICK)
         {
-            led = (PIND & ~(1 << ORDER_BUTTON)) >> BUTTON_SHIFT;
+            led = (!BIT_GET(PIND, 5) << 2) | (!BIT_GET(PIND, 4) << 1) | !BIT_GET(PIND, 3);
             BIT_TOGGLE(PORTB, led);
             _delay_ms(DELAY_LIMIT);
         }

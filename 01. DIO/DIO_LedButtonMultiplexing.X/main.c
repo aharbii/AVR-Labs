@@ -20,7 +20,7 @@
 #define PIND (*((volatile unsigned char *) 0x30))
 
 #define ORDER_BUTTON 2
-#define DELAY_LIMIT 200
+#define DELAY_LIMIT 50
 #define OUTPUT 0xFF
 #define INPUT 0x00
 #define BUTTON_SHIFT 3
@@ -33,7 +33,7 @@ int main(void)
     unsigned char led = LED_COUNT;
     while (1)
     {
-        led = (PIND & ~(1 << ORDER_BUTTON)) >> BUTTON_SHIFT;
+        led = (!BIT_GET(PIND, 5) << 2) | (!BIT_GET(PIND, 4) << 1) | !BIT_GET(PIND, 3);
         switch (led)
         {
         case 0:
