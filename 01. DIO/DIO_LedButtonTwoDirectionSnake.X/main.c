@@ -89,7 +89,7 @@ int main(void)
                 _delay_ms(DELAY_LIMIT / ITERATION);
                 if (!BIT_GET(PIND, RIGHT_MOVE_BUTTON) || !BIT_GET(PIND, LEFT_MOVE_BUTTON))
                 {
-                    continue;
+                    break;
                 }
             }
             
@@ -106,7 +106,7 @@ int main(void)
                 _delay_ms(DELAY_LIMIT / ITERATION);
                 if (!BIT_GET(PIND, RIGHT_MOVE_BUTTON) || !BIT_GET(PIND, LEFT_MOVE_BUTTON))
                 {
-                    continue;
+                    break;
                 }
             }
             BIT_CLEAR(PORTB, led);
