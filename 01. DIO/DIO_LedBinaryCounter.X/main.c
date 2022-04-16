@@ -10,9 +10,7 @@
 
 #include <util/delay.h>
 
-#define PORTB (*(volatile unsigned char *) 0x38)
-#define DDRB (*(volatile unsigned char *) 0x37)
-#define PINB (*(volatile unsigned char *) 0x36)
+#include "../../Modules/MemMap.h"
 
 int main(void)
 {
