@@ -5,19 +5,11 @@
  * Created on April 11, 2022, 12:31 AM
  */
 
-
-#include "BIT_MATH.h"
-
 #define F_CPU 8000000
 #include <util/delay.h>
 
-#define PORTB (*((volatile unsigned char *) 0x38))
-#define DDRB (*((volatile unsigned char *) 0x37))
-#define PINB (*((volatile unsigned char *) 0x36))
-
-#define PORTD (*((volatile unsigned char *) 0x32))
-#define DDRD (*((volatile unsigned char *) 0x31))
-#define PIND (*((volatile unsigned char *) 0x30))
+#include "../../lib/Utils.h"
+#include "../../lib/MemMap.h"
 
 #define LED_COUNT 8
 #define TRUE_CLICK 100

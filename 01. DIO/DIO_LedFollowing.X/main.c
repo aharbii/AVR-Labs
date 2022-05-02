@@ -10,13 +10,10 @@
 
 #include <util/delay.h>
 
-#define PORTB (*(volatile unsigned char *) 0x38)
-#define DDRB (*(volatile unsigned char *) 0x37)
-#define PINB (*(volatile unsigned char *) 0x36)
+#include "../../lib/MemMap.h"
+#include "../../lib/Utils.h"
 
 #define LED_COUNT 8
-#define BIT_SET(REG, BIT_NUM) ((REG) |= (1 << (BIT_NUM)))
-#define BIT_CLEAR(REG, BIT_NUM) ((REG) &= (~(1 << (BIT_NUM))))
 
 typedef unsigned int size_t;
 

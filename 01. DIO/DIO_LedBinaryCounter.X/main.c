@@ -10,7 +10,7 @@
 
 #include <util/delay.h>
 
-#include "../../Modules/MemMap.h"
+#include "../../lib/MemMap.h"
 
 int main(void)
 {

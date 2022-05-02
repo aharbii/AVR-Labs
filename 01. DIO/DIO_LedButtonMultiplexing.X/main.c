@@ -6,18 +6,13 @@
  */
 
 
-#include "BIT_MATH.h"
+
 
 #define F_CPU 8000000
 #include <util/delay.h>
 
-#define PORTB (*((volatile unsigned char *) 0x38))
-#define DDRB (*((volatile unsigned char *) 0x37))
-#define PINB (*((volatile unsigned char *) 0x36))
-
-#define PORTD (*((volatile unsigned char *) 0x32))
-#define DDRD (*((volatile unsigned char *) 0x31))
-#define PIND (*((volatile unsigned char *) 0x30))
+#include "../../lib/MemMap.h"
+#include "../../lib/Utils.h"
 
 #define ORDER_BUTTON 2
 #define DELAY_LIMIT 50

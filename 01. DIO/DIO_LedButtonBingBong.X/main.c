@@ -6,12 +6,11 @@
  */
 
 
-#include "BIT_MATH.h"
-
 #define F_CPU 8000000
 #include <util/delay.h>
 
-#include "../../Modules/MemMap.h"
+#include "../../lib/MemMap.h"
+#include "../../lib/Utils.h"
 
 #define LED_COUNT 8
 #define TRUE_CLICK 100
