@@ -2,33 +2,14 @@
 #include "SEVEN_SEGMENT_Private.h"
 #include "SEVEN_SEGMENT_Cfg.h"
 
-void SEVEN_SEGMENT_Init(u8 initial_value) 
+void SEVEN_SEGMENT_Init(void)
 {
-    #if SEVEN_SEGMENT_HARDWARE == NORMAL
-    if (initial_value > ONE_DIGIT_MAX)
-    {
-        initial_value = 0;
-    }
-    SEVEN_SEGMENT_Display(initial_value);
-    #elif SEVEN_SEGMENT_HARDWARE == BCD
-    if (initial_value > ONE_DIGIT_MAX)
-    {
-        initial_value = 0;
-    }
-    return SEVEN_SEGMENT_Display_BCD(initial_value);
-    #elif SEVEN_SEGMENT_HARDWARE == MULTIPLEXED
-    if (initial_value > TWO_DIGIT_MAX)
-    {
-        initial_value = 0;
-    }
-    return SEVEN_SEGMENT_Display_MUX(initial_value);
-    #else
-#warning The seven segment hardware must be configured in SEVEN_SEGMENT_Cfg.h
-#endif
+    SEVEN_SEGMENT_Display(0);
 }
 
 ErrorStatus_t SEVEN_SEGMENT_Display(u8 digit)
 {
+#if SEVEN_SEGMENT_HARDWARE == NORMAL
     if (digit > ONE_DIGIT_MAX)
     {
         return INDEX_OUT_OF_RANGE;
@@ -53,10 +34,7 @@ ErrorStatus_t SEVEN_SEGMENT_Display(u8 digit)
 #endif /* SEVEN_SEGMENT_CONNECTION */
 
     return OK;
-}
-
-ErrorStatus_t SEVEN_SEGMENT_Display_BCD(u8 digit)
-{
+#elif SEVEN_SEGMENT_HARDWARE == BCD
     if (digit > ONE_DIGIT_MAX)
     {
         return INDEX_OUT_OF_RANGE;
@@ -67,10 +45,7 @@ ErrorStatus_t SEVEN_SEGMENT_Display_BCD(u8 digit)
     DIO_WritePin(SEVEN_SEGMENT_C_PIN, READ_BIT(digit, 2) ? HIGH : LOW);
     DIO_WritePin(SEVEN_SEGMENT_D_PIN, READ_BIT(digit, 3) ? HIGH : LOW);
     return OK;
-}
-
-ErrorStatus_t SEVEN_SEGMENT_Display_MUX(u8 number)
-{
+#elif SEVEN_SEGMENT_HARDWARE == MULTIPLEXED
     if (number > TWO_DIGIT_MAX)
     {
         return INDEX_OUT_OF_RANGE;
@@ -132,4 +107,7 @@ ErrorStatus_t SEVEN_SEGMENT_Display_MUX(u8 number)
 #endif /* SEVEN_SEGMENT_CONNECTION */
     _delay_ms(BUFFER_DELAY_MS);
     return OK;
+#else
+#warning The seven segment hardware must be configured in SEVEN_SEGMENT_Cfg.h
+#endif /* SEVEN_SEGMENT_HARDWARE */
 }

@@ -11,10 +11,8 @@
 #include "StdTypes.h"
 #include "DIO_Interface.h"
 
-extern void SEVEN_SEGMENT_Init(u8 initial_value);
+extern void SEVEN_SEGMENT_Init(void);
 
 extern ErrorStatus_t SEVEN_SEGMENT_Display(u8 digit);
-extern ErrorStatus_t SEVEN_SEGMENT_Display_BCD(u8 digit);
-extern ErrorStatus_t SEVEN_SEGMENT_Display_MUX(u8 number);
 
 #endif /* SEVEN_SEGMENT_INTERFACE_H */

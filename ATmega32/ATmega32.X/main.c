@@ -16,6 +16,7 @@
 
 #include "LED_Interface.h"
 #include "BUTTON_Interface.h"
+#include "SEVEN_SEGMENT_Interface.h"
 #include "LCD_Interface.h"
 #include "MOTOR_Interface.h"
 
@@ -27,6 +28,7 @@ int main(void)
 
     LED_Init();
     BUTTON_Init();
+    SEVEN_SEGMENT_Init();
     MOTOR_Init();
     LCD_Init();
 

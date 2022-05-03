@@ -1,5 +1,4 @@
 #include "DIO_Interface.h"
-#include "DIO_Private.h"
 #include "DIO_Cfg.h"
 
 /* 
