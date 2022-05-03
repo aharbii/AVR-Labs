@@ -1,4 +1,6 @@
 #include "MOTOR_Interface.h"
+#include "MOTOR_Private.h"
+#include "MOTOR_Cfg.h"
 
 const DIO_Pin_type MotorPinsArray[TOTAL_MOTORS][MOTOR_PINS] = {
     // Motors IN1    IN2

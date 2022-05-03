@@ -1,5 +1,6 @@
 #include "LCD_Interface.h"
 #include "LCD_Private.h"
+#include "LCD_Cfg.h"
 
 static void WriteInstruction(u8 instruction)
 {
@@ -48,6 +49,7 @@ void LCD_ClearLocation(void)
 {
 } */
 
+// FIXME: implement int_to_string() func
 void LCD_WriteNumber(s32 number)
 {
     u8 str_number[S32_MAX_DIGITS_NUM] = {0};

@@ -1,12 +1,12 @@
 /*
- * File:   MOTOR.h
+ * File:   MOTOR_Interface.h
  * Author: aharbii
  *
  * Created on April 30, 2022, 11:03 PM
  */
 
-#ifndef MOTOR_H
-#define MOTOR_H
+#ifndef MOTOR_INTERFACE_H
+#define MOTOR_INTERFACE_H
 
 #include "StdTypes.h"
 #include "DIO_Interface.h"
@@ -32,4 +32,4 @@ extern void MOTOR_Stop(MOTOR_type motor);
 #define IN1 0
 #define IN2 1
 
-#endif /* MOTOR_H */
+#endif /* MOTOR_INTERFACE_H */

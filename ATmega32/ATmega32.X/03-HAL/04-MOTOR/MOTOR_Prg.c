@@ -1,5 +1,6 @@
 #include "MOTOR_Interface.h"
 #include "MOTOR_Private.h"
+#include "MOTOR_Cfg.h"
 
 void MOTOR_Init(void)
 {

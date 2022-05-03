@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   LED_Interface.h
  * Author: aharbii
  *
@@ -6,16 +6,17 @@
  */
 
 #ifndef LED_INTERFACE_H
-#define	LED_INTERFACE_H
+#define LED_INTERFACE_H
 
 #include "StdTypes.h"
 #include "DIO_Interface.h"
+
+extern void LED_Init(void);
 
 extern void LED_OnActiveHigh(DIO_Pin_type led);
 extern void LED_OffActiveHigh(DIO_Pin_type led);
 
 extern void LED_OnActiveLow(DIO_Pin_type led);
-extern void LED_OffActiveHigh(DIO_Pin_type led);
+extern void LED_OffActiveLow(DIO_Pin_type led);
 
-#endif	/* LED_INTERFACE_H */
-
+#endif /* LED_INTERFACE_H */

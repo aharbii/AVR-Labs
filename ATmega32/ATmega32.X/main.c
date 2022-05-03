@@ -8,23 +8,30 @@
 #define F_CPU 8000000
 #include <util/delay.h>
 
-#include "DIO_Interface.h"
-#include "DIO_Cfg.h"
-#include "MOTOR_Interface.h"
-#include "LCD_Interface.h"
-#include "CAR.h"
-
 #include "MemMap.h"
 #include "StdTypes.h"
 #include "Utils.h"
 
-#define BUTTON1
-#define BUTTON2
+#include "DIO_Interface.h"
+
+#include "LED_Interface.h"
+#include "BUTTON_Interface.h"
+#include "LCD_Interface.h"
+#include "MOTOR_Interface.h"
+
+#include "CAR.h"
 
 int main(void)
 {
     DIO_Init();
+
+    LED_Init();
+    BUTTON_Init();
+    MOTOR_Init();
     LCD_Init();
+
+    CAR_Init();
+
     u16 number = 5;
     while (1)
     {

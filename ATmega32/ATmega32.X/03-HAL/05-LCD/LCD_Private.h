@@ -8,6 +8,9 @@
 #ifndef LCD_PRIVATE_H
 #define LCD_PRIVATE_H
 
+// TODO: LCD instructions from Character LCD Datasheet
+/*  */
+
 #define S32_MAX_DIGITS_NUM 11
 #define DECIMAL_BASE 10
 #define ASCII_CHAR_START '0'
