@@ -2,54 +2,137 @@
 #include "LCD_Private.h"
 #include "LCD_Cfg.h"
 
+static u8 cell = 0;
+static u8 line = 0;
+
+static void DecrementCursor(void)
+{
+    if (cell == 0)
+    {
+        if (line == 0)
+        {
+            line = 1;
+            cell = 15;
+        }
+        else
+        {
+            line -= 1;
+            cell = 15;
+        }
+    }
+    else
+    {
+        cell -= 1;
+    }
+}
+
+static void IncrementCursor(void)
+{
+    if (cell == 15)
+    {
+        if (line == 1)
+        {
+            line = 0;
+            cell = 0;
+        }
+        else
+        {
+            line += 1;
+            cell = 0;
+        }
+    }
+    else
+    {
+        cell += 1;
+    }
+}
+
+static void ResetCursor(void)
+{
+    cell = 0;
+    line = 0;
+}
+
 static void WriteInstruction(u8 instruction)
 {
-    DIO_WritePin(RS, LOW);
-    DIO_WritePort(LCD_PORT, instruction); // 8 Bit Mode, 2 Lines LCD
-    DIO_WritePin(EN, HIGH);
-    _delay_ms(1);
-    DIO_WritePin(EN, LOW);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, LOW);
+    DIO_WritePort(LCD_PORT, instruction);
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
 }
 
 static void WriteData(u8 data)
 {
-    DIO_WritePin(RS, HIGH);
+    LCD_SetCursor(line, cell);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, HIGH);
     DIO_WritePort(LCD_PORT, data);
-    DIO_WritePin(EN, HIGH);
-    _delay_ms(1);
-    DIO_WritePin(EN, LOW);
-    _delay_ms(1);
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+    IncrementCursor();
+}
+
+static void DeleteCell(void)
+{
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, HIGH);
+    DIO_WritePort(LCD_PORT, 0);
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
 }
 
 void LCD_Init(void)
 {
-    _delay_ms(50);
-    WriteInstruction(0x38);
-    _delay_ms(1);
-    WriteInstruction(0x0C); // 0x0F, 0x0E, 0x0C
-    _delay_ms(1);
-    WriteInstruction(0x01); // Clear
-    _delay_ms(2);
-    WriteInstruction(0x06); // Increase DDRAM address, shift off
+    _delay_ms(VDD_RISE_TIME_MS);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_FUNCTION_SET);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
+    _delay_ms(CLEAR_TIME_MS);
+    WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
+
+    ResetCursor();
 }
 
 void LCD_Clear(void)
 {
-    WriteInstruction(0x01);
-    _delay_ms(2);
+    WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
+    _delay_ms(CLEAR_TIME_MS);
+
+    ResetCursor();
 }
 
-// TODO: LCD_ClearLast from Character LCD Datasheet
-/*
 void LCD_ClearLast(void)
 {
+    DecrementCursor();
+    LCD_SetCursor(line, cell);
+    WriteData(0);
+    DecrementCursor();
+    LCD_SetCursor(line, cell);
 }
-// TODO: LCD_ClearLocation from Character LCD Datasheet
-void LCD_ClearLocation(void)
-{
-} */
 
-// FIXME: implement int_to_string() func
+ErrorStatus_t LCD_ClearLocation(u8 line, u8 cell)
+{
+    if (LCD_SetCursor(line, cell) == NOT_OK)
+    {
+        return NOT_OK;
+    }
+    DeleteCell();
+    return OK;
+}
+
 void LCD_WriteNumber(s32 number)
 {
     u8 str_number[S32_MAX_DIGITS_NUM] = {0};
@@ -137,7 +220,6 @@ void LCD_WriteHex(u8 number)
     LCD_WriteChar(low_nibble_hex);
 }
 
-// FIXME: - when the input is larger than 9999 ?
 void LCD_WriteNumber_4D(u16 number)
 {
     if (number > FOUR_DIGITS_MAX)
@@ -156,12 +238,25 @@ void LCD_WriteNumber_4D(u16 number)
     }
 }
 
-// TODO: LCD_SetCursor from Character LCD Datasheet
-/*
-void LCD_SetCursor(u8 line, u8 cell)
+ErrorStatus_t LCD_SetCursor(u8 new_line, u8 new_cell)
 {
+    line = new_line;
+    cell = new_cell;
+    if (new_line == 0)
+    {
+        WriteInstruction(FRIST_LINE_FIRST_CELL + new_cell);
+    }
+    else if (new_line == 1)
+    {
+        WriteInstruction(SECOND_LINE_FIRST_CELL + new_cell);
+    }
+    else
+    {
+        return NOT_OK;
+    }
+
+    return OK;
 }
- */
 void LCD_WriteFloat(f96 number)
 {
     s32 int_value = ((s32)number);
