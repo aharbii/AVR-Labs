@@ -43,7 +43,7 @@ int main(void)
         _delay_ms(2000);
         LCD_Clear();
 
-        LCD_WriteString((u8 *)"Hello, World!");
+        LCD_WriteString((u8 *)"I work as an Emb");
         _delay_ms(2000);
         LCD_ClearLast();
         _delay_ms(2000);
