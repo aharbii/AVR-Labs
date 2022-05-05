@@ -15,6 +15,7 @@
 #include "DIO_Interface.h"
 #include "BUTTON_Interface.h"
 #include "SEVEN_SEGMENT_Interface.h"
+#include "BUZZER_Interface.h"
 
 typedef enum
 {

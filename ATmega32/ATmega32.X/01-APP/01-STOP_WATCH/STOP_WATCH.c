@@ -14,7 +14,7 @@ static void end(void);
 void STOP_WATCH_Init(void)
 {
     reset();
-    DIO_WritePin(BUZZER, LOW);
+    BUZZER_OffActiveHigh(BUZZER);
     SEVEN_SEGMENT_Display(time);
 }
 
@@ -64,7 +64,7 @@ static void run(void)
 
 static void end(void)
 {
-    DIO_WritePin(BUZZER, HIGH);
+    BUZZER_OnActiveHigh(BUZZER);
     time = start_time;
     state = STOP;
     for (u16 i = 0; i < 100; i++)
@@ -72,7 +72,7 @@ static void end(void)
         SEVEN_SEGMENT_Display(time);
         _delay_ms(1);
     }
-    DIO_WritePin(BUZZER, LOW);
+    BUZZER_OffActiveHigh(BUZZER);
 }
 
 static void pause_resume(void)
