@@ -5,53 +5,98 @@
 static u8 cell = 0;
 static u8 line = 0;
 
-static void DecrementCursor(void)
+#if LCD_MODE == FOUR_BIT_MODE
+
+static void WriteInstruction(u8 instruction)
 {
-    if (cell == 0)
-    {
-        if (line == 0)
-        {
-            line = 1;
-            cell = 15;
-        }
-        else
-        {
-            line -= 1;
-            cell = 15;
-        }
-    }
-    else
-    {
-        cell -= 1;
-    }
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, LOW);
+    DIO_WritePin(LCD_D7, (DIO_PinVoltage_type)READ_BIT(instruction, 7));
+    DIO_WritePin(LCD_D6, (DIO_PinVoltage_type)READ_BIT(instruction, 6));
+    DIO_WritePin(LCD_D5, (DIO_PinVoltage_type)READ_BIT(instruction, 5));
+    DIO_WritePin(LCD_D4, (DIO_PinVoltage_type)READ_BIT(instruction, 4));
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_D7, (DIO_PinVoltage_type)READ_BIT(instruction, 3));
+    DIO_WritePin(LCD_D6, (DIO_PinVoltage_type)READ_BIT(instruction, 2));
+    DIO_WritePin(LCD_D5, (DIO_PinVoltage_type)READ_BIT(instruction, 1));
+    DIO_WritePin(LCD_D4, (DIO_PinVoltage_type)READ_BIT(instruction, 0));
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
 }
 
-static void IncrementCursor(void)
+static void WriteData(u8 data)
 {
-    if (cell == 15)
-    {
-        if (line == 1)
-        {
-            line = 0;
-            cell = 0;
-        }
-        else
-        {
-            line += 1;
-            cell = 0;
-        }
-    }
-    else
-    {
-        cell += 1;
-    }
+    LCD_SetCursor(line, cell);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, HIGH);
+    DIO_WritePin(LCD_D7, (DIO_PinVoltage_type)READ_BIT(data, 7));
+    DIO_WritePin(LCD_D6, (DIO_PinVoltage_type)READ_BIT(data, 6));
+    DIO_WritePin(LCD_D5, (DIO_PinVoltage_type)READ_BIT(data, 5));
+    DIO_WritePin(LCD_D4, (DIO_PinVoltage_type)READ_BIT(data, 4));
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_D7, (DIO_PinVoltage_type)READ_BIT(data, 3));
+    DIO_WritePin(LCD_D6, (DIO_PinVoltage_type)READ_BIT(data, 2));
+    DIO_WritePin(LCD_D5, (DIO_PinVoltage_type)READ_BIT(data, 1));
+    DIO_WritePin(LCD_D4, (DIO_PinVoltage_type)READ_BIT(data, 0));
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+    IncrementCursor();
 }
 
-static void ResetCursor(void)
+void LCD_Init(void)
 {
-    cell = 0;
-    line = 0;
+    _delay_ms(VDD_RISE_TIME_MS);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_FUNCTION_SET_4BIT_INIT);
+    WriteInstruction(INSTRUCTION_FUNCTION_SET_4BIT);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
+    _delay_ms(CLEAR_TIME_MS);
+    WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
+
+    ResetCursor();
 }
+
+static void DeleteCell(void)
+{
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    DIO_WritePin(LCD_RS_PIN, HIGH);
+    DIO_WritePin(LCD_D7, LOW);
+    DIO_WritePin(LCD_D6, LOW);
+    DIO_WritePin(LCD_D5, LOW);
+    DIO_WritePin(LCD_D4, LOW);
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_D7, LOW);
+    DIO_WritePin(LCD_D6, LOW);
+    DIO_WritePin(LCD_D5, LOW);
+    DIO_WritePin(LCD_D4, LOW);
+    DIO_WritePin(LCD_EN_PIN, HIGH);
+    _delay_ms(PULSE_TIME_MS);
+    DIO_WritePin(LCD_EN_PIN, LOW);
+    _delay_ms(PULSE_TIME_MS);
+}
+
+#elif LCD_MODE == EIGHT_BIT_MODE
+/* 8-Bit LCD Pins Configurations */
 
 static void WriteInstruction(u8 instruction)
 {
@@ -78,6 +123,22 @@ static void WriteData(u8 data)
     IncrementCursor();
 }
 
+void LCD_Init(void)
+{
+    _delay_ms(VDD_RISE_TIME_MS);
+    DIO_WritePin(LCD_RW_PIN, LOW);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_FUNCTION_SET_8BIT);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
+    _delay_ms(CMD_TIME_MS);
+    WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
+    _delay_ms(CLEAR_TIME_MS);
+    WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
+
+    ResetCursor();
+}
+
 static void DeleteCell(void)
 {
     DIO_WritePin(LCD_RW_PIN, LOW);
@@ -89,21 +150,56 @@ static void DeleteCell(void)
     DIO_WritePin(LCD_EN_PIN, LOW);
     _delay_ms(PULSE_TIME_MS);
 }
+#else
+#warning LCD_MODE must be configured in LCD_Cfg.h
+#endif /* LCD_MODE */
 
-void LCD_Init(void)
+static void DecrementCursor(void)
 {
-    _delay_ms(VDD_RISE_TIME_MS);
-    DIO_WritePin(LCD_RW_PIN, LOW);
-    _delay_ms(CMD_TIME_MS);
-    WriteInstruction(INSTRUCTION_FUNCTION_SET);
-    _delay_ms(CMD_TIME_MS);
-    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
-    _delay_ms(CMD_TIME_MS);
-    WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
-    _delay_ms(CLEAR_TIME_MS);
-    WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
+    if (cell == 0)
+    {
+        if (line == 0)
+        {
+            line = LCD_LINES_MAX_OFFSET;
+            cell = LCD_CELLS_MAX_OFFSET;
+        }
+        else
+        {
+            line -= 1;
+            cell = LCD_CELLS_MAX_OFFSET;
+        }
+    }
+    else
+    {
+        cell -= 1;
+    }
+}
 
-    ResetCursor();
+static void IncrementCursor(void)
+{
+    if (cell == LCD_CELLS_MAX_OFFSET)
+    {
+        if (line == LCD_LINES_MAX_OFFSET)
+        {
+            line = 0;
+            cell = 0;
+        }
+        else
+        {
+            line += 1;
+            cell = 0;
+        }
+    }
+    else
+    {
+        cell += 1;
+    }
+}
+
+static void ResetCursor(void)
+{
+    cell = 0;
+    line = 0;
 }
 
 void LCD_Clear(void)
@@ -234,7 +330,7 @@ void LCD_WriteNumber_4D(u16 number)
         u8 char_digit = digit + ASCII_CHAR_START;
         LCD_WriteChar(char_digit);
         number %= base;
-        base /= 10;
+        base /= DECIMAL_BASE;
     }
 }
 

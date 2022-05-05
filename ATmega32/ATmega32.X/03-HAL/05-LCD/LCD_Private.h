@@ -8,6 +8,11 @@
 #ifndef LCD_PRIVATE_H
 #define LCD_PRIVATE_H
 
+/* LCD Mode 4-Bit and 8-Bit */
+
+#define EIGHT_BIT_MODE 0
+#define FOUR_BIT_MODE 1
+
 /* Timing Configurations */
 
 #define PULSE_TIME_MS 2
@@ -24,7 +29,9 @@
 
 /* Instructions */
 
-#define INSTRUCTION_FUNCTION_SET 0x38
+#define INSTRUCTION_FUNCTION_SET_4BIT_INIT 0x02
+#define INSTRUCTION_FUNCTION_SET_4BIT 0x28
+#define INSTRUCTION_FUNCTION_SET_8BIT 0x38
 #define INSTRUCTION_DISPLAY_ON_CURSOR_OFF 0x0C
 #define INSTRUCTION_DISPLAY_ON_CURSOR_ON 0x0E
 #define INSTRUCTION_DISPLAY_ON_CURSOR_ON_BLINK 0x0F
@@ -36,7 +43,6 @@
 #define SECOND_LINE_FIRST_CELL 0xC0
 
 #define ADDRESS_COUNTER_PINS 0x7F
-
 
 /* Macros */
 
@@ -56,9 +62,15 @@
 /* Private Functions */
 
 static void WriteData(u8 data);
+static void DeleteCell(void);
 static void WriteInstruction(u8 instruction);
 static void DecrementCursor(void);
 static void IncrementCursor(void);
 static void ResetCursor(void);
+
+/* LCD Offset */
+
+#define LCD_CELLS_MAX_OFFSET (LCD_CELLS - 1)
+#define LCD_LINES_MAX_OFFSET (LCD_LINES - 1)
 
 #endif /* LCD_PRIVATE_H */
