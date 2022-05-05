@@ -25,7 +25,7 @@ static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode)
                     break;
                 case PB:
                     SET_BIT(DDRB, pin_num);
-                    CLR_BIT(PORTD, pin_num);
+                    CLR_BIT(PORTB, pin_num);
                     break;
                 case PC:
                     SET_BIT(DDRC, pin_num);
@@ -46,7 +46,7 @@ static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode)
                     break;
                 case PB:
                     CLR_BIT(DDRB, pin_num);
-                    CLR_BIT(PORTD, pin_num);
+                    CLR_BIT(PORTB, pin_num);
                     break;
                 case PC:
                     CLR_BIT(DDRC, pin_num);
@@ -67,7 +67,7 @@ static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode)
                     break;
                 case PB:
                     CLR_BIT(DDRB, pin_num);
-                    SET_BIT(PORTD, pin_num);
+                    SET_BIT(PORTB, pin_num);
                     break;
                 case PC:
                     CLR_BIT(DDRC, pin_num);

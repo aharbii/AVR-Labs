@@ -21,55 +21,23 @@
 #include "MOTOR_Interface.h"
 
 #include "CAR.h"
+#include "STOP_WATCH.h"
+
 
 int main(void)
 {
     DIO_Init();
 
-    LED_Init();
+    // LED_Init();
     BUTTON_Init();
     SEVEN_SEGMENT_Init();
-    MOTOR_Init();
-    LCD_Init();
+    // MOTOR_Init();
+    // LCD_Init();
 
-    CAR_Init();
+    // CAR_Init();
+    STOP_WATCH_Init();
     while (1)
     {
-        LCD_WriteNumber(-1270);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteChar('Z');
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteString((u8 *)"I work as an Emb");
-        _delay_ms(2000);
-        LCD_ClearLast();
-        _delay_ms(2000);
-        LCD_ClearLocation(0, 3);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_SetCursor(0, 10);
-        LCD_WriteBinary(5);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteBinary_8B(43);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteHex(57);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteNumber_4D(127);
-        _delay_ms(2000);
-        LCD_Clear();
-
-        LCD_WriteFloat(3.14159);
-        _delay_ms(2000);
-        LCD_Clear();
+        STOP_WATCH_Runnable();
     }
 }

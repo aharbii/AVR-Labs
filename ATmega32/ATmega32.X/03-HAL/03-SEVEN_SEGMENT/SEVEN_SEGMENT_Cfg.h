@@ -26,7 +26,7 @@
  *      - MULTIPLEXED
  */
 
-#define SEVEN_SEGMENT_HARDWARE NORMAL
+#define SEVEN_SEGMENT_HARDWARE MULTIPLEXED
 
 #if SEVEN_SEGMENT_HARDWARE == BCD
     /* Binary Decoded Seven Segment Configurations */
@@ -57,7 +57,7 @@
         #define SEVEN_SEGMENT_E_PIN PINA5
         #define SEVEN_SEGMENT_F_PIN PINA6
         #define SEVEN_SEGMENT_G_PIN PINA7
-        #define SEVEN_SEGMENT_DOT_PIN PINB1
+        #define SEVEN_SEGMENT_DOT_PIN PINB0
     #else
         #warning The seven segment connection must be configured in SEVEN_SEGMENT_Cfg.h
     #endif /* SEVEN_SEGMENT_CONNECTION */
