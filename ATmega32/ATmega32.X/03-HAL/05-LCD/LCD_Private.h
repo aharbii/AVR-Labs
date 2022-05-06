@@ -81,6 +81,7 @@ static void WriteInstruction(u8 instruction);
 static void DecrementCursor(void);
 static void IncrementCursor(void);
 static void ResetCursor(void);
+static void SetNullPattern(const u8 *pattern);
 
 /* LCD Offset */
 
