@@ -69,7 +69,13 @@
 
 /* Private Functions */
 
-static void WriteData(u8 data);
+typedef enum
+{
+    PATTERN,
+    PRINT
+} LCD_WriteMode_type;
+
+static void WriteData(u8 data, LCD_WriteMode_type mode);
 static void DeleteCell(void);
 static void WriteInstruction(u8 instruction);
 static void DecrementCursor(void);

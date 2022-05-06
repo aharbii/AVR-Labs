@@ -31,9 +31,13 @@ static void WriteInstruction(u8 instruction)
     _delay_ms(PULSE_TIME_MS);
 }
 
-static void WriteData(u8 data)
+static void WriteData(u8 data, LCD_WriteMode_type mode)
 {
-    LCD_SetCursor(line, cell);
+    if (mode == PRINT)
+    {
+        LCD_SetCursor(line, cell);
+    }
+
     DIO_WritePin(LCD_RW_PIN, LOW);
     _delay_ms(CMD_TIME_MS);
     DIO_WritePin(LCD_RS_PIN, HIGH);
@@ -53,7 +57,11 @@ static void WriteData(u8 data)
     _delay_ms(PULSE_TIME_MS);
     DIO_WritePin(LCD_EN_PIN, LOW);
     _delay_ms(PULSE_TIME_MS);
-    IncrementCursor();
+
+    if (mode == PRINT)
+    {
+        IncrementCursor();
+    }
 }
 
 void LCD_Init(void)
@@ -113,9 +121,12 @@ static void WriteInstruction(u8 instruction)
     DIO_WritePin(LCD_EN_PIN, LOW);
 }
 
-static void WriteData(u8 data)
+static void WriteData(u8 data, LCD_WriteMode_type mode)
 {
-    LCD_SetCursor(line, cell);
+    if (mode == PRINT)
+    {
+        LCD_SetCursor(line, cell);
+    }
     DIO_WritePin(LCD_RW_PIN, LOW);
     _delay_ms(CMD_TIME_MS);
     DIO_WritePin(LCD_RS_PIN, HIGH);
@@ -124,7 +135,10 @@ static void WriteData(u8 data)
     _delay_ms(PULSE_TIME_MS);
     DIO_WritePin(LCD_EN_PIN, LOW);
     _delay_ms(PULSE_TIME_MS);
-    IncrementCursor();
+    if (mode == PRINT)
+    {
+        IncrementCursor();
+    }
 }
 
 void LCD_Init(void)
@@ -221,7 +235,7 @@ void LCD_ClearLast(void)
 {
     DecrementCursor();
     LCD_SetCursor(line, cell);
-    WriteData(0);
+    WriteData(' ', PRINT);
     DecrementCursor();
     LCD_SetCursor(line, cell);
 }
@@ -269,7 +283,7 @@ void LCD_WriteNumber(s32 number)
 
 void LCD_WriteChar(u8 character)
 {
-    WriteData(character);
+    WriteData(character, PRINT);
 }
 
 void LCD_WriteString(u8 *str)
@@ -369,16 +383,18 @@ void LCD_WriteFloat(f96 number)
     LCD_WriteNumber(float_value);
 }
 
-void LCD_SetChar(u8 index, u8 *pattern)
+void LCD_SetPattern(u8 index, const u8 *pattern)
 {
-    if ((index < CGRAM_SECTIONS_NUM) && (saved_patterns < CGRAM_SECTIONS_NUM))
+
+    if ((index < CGRAM_SECTIONS_NUM) && (saved_patterns < CGRAM_SECTIONS_NUM) && (index > 0))
     {
         CLR_BIT(index, 7);
         WriteInstruction(INSTRUCTION_SET_CGRAM_ADDRESS + (index * CGRAM_SECTIONS_NUM));
         for (u8 i = 0; i < CGRAM_LOCATIONS_NUM; i++)
         {
-            WriteData(pattern[i]);
+            WriteData(pattern[i], PATTERN);
         }
         saved_patterns += 1;
+        WriteInstruction(INSTRUCTION_SET_DDRAM_ADDRESS);
     }
 }
