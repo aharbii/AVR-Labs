@@ -6,6 +6,8 @@ static u8 cell = 0;
 static u8 line = 0;
 static u8 saved_patterns = 0;
 
+static const u8 null_pattern[CGRAM_LOCATIONS_NUM] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+
 #if LCD_MODE == FOUR_BIT_MODE
 
 static void WriteInstruction(u8 instruction)
@@ -80,7 +82,7 @@ void LCD_Init(void)
     WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
     _delay_ms(CLEAR_TIME_MS);
     WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
-
+    SetNullPattern(null_pattern);
     ResetCursor();
 }
 
@@ -156,7 +158,7 @@ void LCD_Init(void)
     WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
     _delay_ms(CLEAR_TIME_MS);
     WriteInstruction(INSTRUCTION_ENTRY_MODE_SET);
-
+    SetNullPattern(null_pattern);
     ResetCursor();
 }
 
@@ -381,6 +383,17 @@ void LCD_WriteFloat(f96 number)
     s32 float_value = (number - ((s32)number)) * FLOAT_PRECISION;
     LCD_WriteChar('.');
     LCD_WriteNumber(float_value);
+}
+
+static void SetNullPattern(const u8 *pattern)
+{
+    WriteInstruction(INSTRUCTION_SET_CGRAM_ADDRESS);
+    for (u8 i = 0; i < CGRAM_LOCATIONS_NUM; i++)
+    {
+        WriteData(pattern[i], PATTERN);
+    }
+    saved_patterns += 1;
+    WriteInstruction(INSTRUCTION_SET_DDRAM_ADDRESS);
 }
 
 void LCD_SetPattern(u8 index, const u8 *pattern)
