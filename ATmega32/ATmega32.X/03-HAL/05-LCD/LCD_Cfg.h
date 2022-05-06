@@ -22,17 +22,17 @@
  *      - EIGHT_BIT_MODE
  */
 
-#define LCD_MODE EIGHT_BIT_MODE
+#define LCD_MODE FOUR_BIT_MODE
 
 #if LCD_MODE == FOUR_BIT_MODE
 /* 4-Bit LCD Pins Configuration */
 
-#define LCD_D4 PINA0
-#define LCD_D5 PINA1
-#define LCD_D6 PINA2
-#define LCD_D7 PINA3
-#define LCD_RS_PIN PINB0
-#define LCD_EN_PIN PINB1
+#define LCD_D4 PINA3
+#define LCD_D5 PINA4
+#define LCD_D6 PINA5
+#define LCD_D7 PINA6
+#define LCD_RS_PIN PINA1
+#define LCD_EN_PIN PINA2
 #define LCD_RW_PIN PINB2
 #define LCD_DDRAM_BF_PIN PINA7
 

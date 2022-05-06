@@ -23,6 +23,10 @@
 #include "CAR.h"
 #include "STOP_WATCH.h"
 
+#define ARROW (u8)('z' + 4)
+
+u8 alive_man_pattern[8] = {0x0E, 0x0E, 0x04, 0x04, 0x1F, 0x04, 0x0A, 0x0A};
+u8 dead_man_pattern[8] = {0x0E, 0x0E, 0x15, 0x0E, 0x04, 0x04, 0x0A, 0x11};
 
 int main(void)
 {
@@ -30,14 +34,32 @@ int main(void)
 
     // LED_Init();
     BUTTON_Init();
-    SEVEN_SEGMENT_Init();
+    // SEVEN_SEGMENT_Init();
     // MOTOR_Init();
-    // LCD_Init();
+    LCD_Init();
 
     // CAR_Init();
-    STOP_WATCH_Init();
+    // STOP_WATCH_Init();
+    u8 alive_man = 2;
+    u8 dead_man = 3;
+    LCD_SetChar(alive_man, alive_man_pattern);
+    LCD_SetChar(dead_man, dead_man_pattern);
+    LCD_Clear();
+    LCD_SetCursor(0, 0);
+    LCD_WriteChar(alive_man);
     while (1)
     {
-        STOP_WATCH_Runnable();
+        LCD_SetCursor(0, 15);
+        LCD_WriteChar(alive_man);
+        for (u8 i = 1; i < 15; i++)
+        {
+            LCD_SetCursor(0, i);
+            LCD_WriteChar(ARROW);
+            _delay_ms(50);
+            LCD_ClearLocation(0, i);
+        }
+        LCD_SetCursor(0, 15);
+        LCD_WriteChar(dead_man);
+        _delay_ms(200);
     }
 }

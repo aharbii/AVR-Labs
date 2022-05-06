@@ -4,6 +4,7 @@
 
 static u8 cell = 0;
 static u8 line = 0;
+static u8 saved_patterns = 0;
 
 #if LCD_MODE == FOUR_BIT_MODE
 
@@ -57,6 +58,9 @@ static void WriteData(u8 data)
 
 void LCD_Init(void)
 {
+    cell = 0;
+    line = 0;
+    saved_patterns = 0;
     _delay_ms(VDD_RISE_TIME_MS);
     DIO_WritePin(LCD_RW_PIN, LOW);
     _delay_ms(CMD_TIME_MS);
@@ -125,6 +129,9 @@ static void WriteData(u8 data)
 
 void LCD_Init(void)
 {
+    cell = 0;
+    line = 0;
+    saved_patterns = 0;
     _delay_ms(VDD_RISE_TIME_MS);
     DIO_WritePin(LCD_RW_PIN, LOW);
     _delay_ms(CMD_TIME_MS);
@@ -340,7 +347,7 @@ ErrorStatus_t LCD_SetCursor(u8 new_line, u8 new_cell)
     cell = new_cell;
     if (new_line == 0)
     {
-        WriteInstruction(FRIST_LINE_FIRST_CELL + new_cell);
+        WriteInstruction(FIRST_LINE_FIRST_CELL + new_cell);
     }
     else if (new_line == 1)
     {
@@ -360,4 +367,18 @@ void LCD_WriteFloat(f96 number)
     s32 float_value = (number - ((s32)number)) * FLOAT_PRECISION;
     LCD_WriteChar('.');
     LCD_WriteNumber(float_value);
+}
+
+void LCD_SetChar(u8 index, u8 *pattern)
+{
+    if ((index < CGRAM_SECTIONS_NUM) && (saved_patterns < CGRAM_SECTIONS_NUM))
+    {
+        CLR_BIT(index, 7);
+        WriteInstruction(INSTRUCTION_SET_CGRAM_ADDRESS + (index * CGRAM_SECTIONS_NUM));
+        for (u8 i = 0; i < CGRAM_LOCATIONS_NUM; i++)
+        {
+            WriteData(pattern[i]);
+        }
+        saved_patterns += 1;
+    }
 }

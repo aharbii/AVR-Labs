@@ -16,6 +16,7 @@ extern void LCD_Clear(void);
 extern void LCD_ClearLast(void);
 extern ErrorStatus_t LCD_ClearLocation(u8 line, u8 cell);
 extern ErrorStatus_t LCD_SetCursor(u8 line, u8 cell);
+extern void LCD_SetChar(u8 ascii, u8 *pattern);
 
 extern void LCD_WriteNumber(s32 number);
 extern void LCD_WriteChar(u8 character);

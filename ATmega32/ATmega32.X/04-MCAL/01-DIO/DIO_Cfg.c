@@ -11,14 +11,14 @@
 const DIO_PinMode_type PinsModeArray[TOTAL_PINS]=
 {
     OUTPUT,      /* Port A Pin 0 ADC0*/
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 1 ADC1*/
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 2 */
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 3 */
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 4 */
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 5 */
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 6 */
-	SEVEN_SEGMENT_PIN,      /* Port A Pin 7 ADC7*/
-	SEVEN_SEGMENT_PIN,      /* Port B Pin 0   / */
+	LCD_RS_PIN,      /* Port A Pin 1 ADC1*/
+	LCD_EN_PIN,      /* Port A Pin 2 */
+	LCD_PIN,      /* Port A Pin 3 */
+	LCD_PIN,      /* Port A Pin 4 */
+	LCD_PIN,      /* Port A Pin 5 */
+	LCD_PIN,      /* Port A Pin 6 */
+	OUTPUT,      /* Port A Pin 7 ADC7*/
+	OUTPUT,      /* Port B Pin 0   / */
 	OUTPUT,      /* Port B Pin 1   /*/
 	OUTPUT,		 /* Port B Pin 2 / INT2*/
 	OUTPUT,		 /* Port B Pin 3   /OC0*/
@@ -31,9 +31,9 @@ const DIO_PinMode_type PinsModeArray[TOTAL_PINS]=
 	OUTPUT,		 /* Port C Pin 2 */
 	OUTPUT,		 /* Port C Pin 3 */
 	OUTPUT,		 /* Port C Pin 4 */
-	BUZZER_PIN,		 /* Port C Pin 5 */
-	SEVEN_SEGMENT_EN_PIN,		 /* Port C Pin 6 */
-	SEVEN_SEGMENT_EN_PIN,		 /* Port C Pin 7 */
+	OUTPUT,		 /* Port C Pin 5 */
+	OUTPUT,		 /* Port C Pin 6 */
+	OUTPUT,		 /* Port C Pin 7 */
 	OUTPUT,		 /* Port D Pin 0 */
 	OUTPUT,		 /* Port D Pin 1 */
     BUTTON_PIN,      /* Port D Pin 2 /INT0*/
