@@ -28,19 +28,8 @@
 int main(void)
 {
     DIO_Init();
-
-    // LED_Init();
-    // BUTTON_Init();
-    // SEVEN_SEGMENT_Init();
-    // MOTOR_Init();
     LCD_Init();
     KEYPAD_Init();
-
-    // CAR_Init();
-    // STOP_WATCH_Init();
-    // LCD_GAMES_Init();
-    // LCD_GAMES_ArrowKilling_Init();
-    // LCD_GAMES_MoveMan_Init();
     while (1)
     {
         u8 keypad_input = KEYPAD_GetEntry();

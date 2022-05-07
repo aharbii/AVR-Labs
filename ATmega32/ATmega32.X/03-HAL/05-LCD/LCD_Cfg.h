@@ -33,7 +33,7 @@
 #define LCD_D7 PINA6
 #define LCD_RS_PIN PINA1
 #define LCD_EN_PIN PINA2
-#define LCD_RW_PIN PINB2
+#define LCD_RW_PIN PINB7
 #define LCD_DDRAM_BF_PIN PINA7
 
 #elif LCD_MODE == EIGHT_BIT_MODE

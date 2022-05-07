@@ -20,17 +20,17 @@ void STOP_WATCH_Init(void)
 
 void STOP_WATCH_Runnable(void)
 {
-    if (BUTTON_ReadClick_PullUp(MODE_BUTTON) == PRESSED)
+    if (BUTTON_READ_CLICK(MODE_BUTTON) == PRESSED)
     {
         change_mode();
     }
 
-    if (BUTTON_ReadClick_PullUp(RESET_BUTTON) == PRESSED)
+    if (BUTTON_READ_CLICK(RESET_BUTTON) == PRESSED)
     {
         reset();
     }
 
-    if (BUTTON_ReadClick_PullUp(PAUSE_RUN_BUTTON) == PRESSED)
+    if (BUTTON_READ_CLICK(PAUSE_RUN_BUTTON) == PRESSED)
     {
         pause_resume();   
     }
@@ -49,7 +49,7 @@ static void run(void)
     for (u16 i = 0; i < 350; i++)
     {
         SEVEN_SEGMENT_Display(time);
-        if (DIO_ReadPin(PAUSE_RUN_BUTTON) == LOW || DIO_ReadPin(RESET_BUTTON) == LOW || DIO_ReadPin(MODE_BUTTON) == LOW)
+        if (BUTTON_READ_STATE(PAUSE_RUN_BUTTON) == PRESSED || BUTTON_READ_STATE(RESET_BUTTON) == PRESSED || BUTTON_READ_STATE(MODE_BUTTON) == PRESSED)
         {
             break;
             time += 1;
@@ -64,7 +64,7 @@ static void run(void)
 
 static void end(void)
 {
-    BUZZER_OnActiveHigh(BUZZER);
+    BUZZER_ON(BUZZER);
     time = start_time;
     state = STOP;
     for (u16 i = 0; i < 100; i++)
@@ -72,7 +72,7 @@ static void end(void)
         SEVEN_SEGMENT_Display(time);
         _delay_ms(1);
     }
-    BUZZER_OffActiveHigh(BUZZER);
+    BUZZER_OFF(BUZZER);
 }
 
 static void pause_resume(void)
