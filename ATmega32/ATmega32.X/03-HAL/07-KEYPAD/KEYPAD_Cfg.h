@@ -23,6 +23,9 @@
 #define KEYPAD_ROW_3_OUPUT PIND4
 #define KEYPAD_ROW_4_OUPUT PIND5
 
+#define MULTIPLICATION_ASCII 2
+#define DIVISION_ASCII 3
+
 /*
  * Choose Keypad Connection Mode 
  *      - PULL_UP

@@ -13,7 +13,6 @@
 
 #include "StdTypes.h"
 #include "DIO_Interface.h"
-#include "BUTTON_Interface.h"
 
 #define DEFAULT_KEY 'T'
 

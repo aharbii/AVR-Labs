@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   CALCULATOR_Interface.h
  * Author: aharbii
  *
@@ -6,18 +6,16 @@
  */
 
 #ifndef CALCULATOR_INTERFACE_H
-#define	CALCULATOR_INTERFACE_H
+#define CALCULATOR_INTERFACE_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
+#define F_CPU 8000000
+#include <util/delay.h>
 
+#include "StdTypes.h"
+#include "LCD_Interface.h"
+#include "KEYPAD_Interface.h"
 
+extern void CALCULATOR_Init(void);
+extern void CALCULATOR_Runnable(void);
 
-
-#ifdef	__cplusplus
-}
-#endif
-
-#endif	/* CALCULATOR_INTERFACE_H */
-
+#endif /* CALCULATOR_INTERFACE_H */

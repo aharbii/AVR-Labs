@@ -77,7 +77,7 @@ void LCD_Init(void)
     WriteInstruction(INSTRUCTION_FUNCTION_SET_4BIT_INIT);
     WriteInstruction(INSTRUCTION_FUNCTION_SET_4BIT);
     _delay_ms(CMD_TIME_MS);
-    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
+    WriteInstruction(INSTRUCTION_DISPLAY_SET);
     _delay_ms(CMD_TIME_MS);
     WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
     _delay_ms(CLEAR_TIME_MS);
@@ -153,7 +153,7 @@ void LCD_Init(void)
     _delay_ms(CMD_TIME_MS);
     WriteInstruction(INSTRUCTION_FUNCTION_SET_8BIT);
     _delay_ms(CMD_TIME_MS);
-    WriteInstruction(INSTRUCTION_DISPLAY_ON_CURSOR_OFF);
+    WriteInstruction(INSTRUCTION_DISPLAY_SET);
     _delay_ms(CMD_TIME_MS);
     WriteInstruction(INSTRUCTION_DISPLAY_CLEAR);
     _delay_ms(CLEAR_TIME_MS);

@@ -21,8 +21,9 @@ u8 KEYPAD_GetEntry(void)
         DIO_WritePin(KeypadOutputPins[row], LOW);
         for (col = 0; col < COLS; col++)
         {
-            if (BUTTON_READ_CLICK(KeypadInputPins[col]) == PRESSED)
+            if (DIO_ReadPin(KeypadInputPins[col]) == PRESSED)
             {
+                while (DIO_ReadPin(KeypadInputPins[col]) == PRESSED);
                 key = KeypadKeys[row][col];
             }
         }

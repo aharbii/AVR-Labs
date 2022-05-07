@@ -19,9 +19,9 @@ extern const DIO_Pin_type KeypadOutputPins[ROWS];
 #define PULL_DOWN 1
 
 #if KEYPAD_CONNECTION == PULL_UP
-#define BUTTON_READ_CLICK BUTTON_ReadClick_PullUp_Polling
+#define PRESSED LOW
 #elif KEYPAD_CONNECTION == PULL_DOWN
-#define BUTTON_READ_CLICK BUTTON_ReadClick_PullDown_Polling
+#define PRESSED HIGH
 #else
 #warning KEYPAD_CONNECTION must be configured in KEYPAD_Cfg.h
 #endif
