@@ -1,7 +1,7 @@
 #include "KEYPAD_Interface.h"
 #include "KEYPAD_Cfg.h"
 
-const u8 KeypadKeys[ROWS][COLS] = {{'7', '8', '9', DIVISION_ASCII}, {'4', '5', '6', MULTIPLICATION_ASCII}, {'1', '2', '3', '-'}, {'C', '0', '=', '+'}};
+const u8 KeypadKeys[ROWS][COLS] = {{'7', '8', '9', '/'}, {'4', '5', '6', '*'}, {'1', '2', '3', '-'}, {'C', '0', '=', '+'}};
 
 const DIO_Pin_type KeypadOutputPins[ROWS] = {KEYPAD_ROW_1_OUPUT, KEYPAD_ROW_2_OUPUT, KEYPAD_ROW_3_OUPUT, KEYPAD_ROW_4_OUPUT};
 

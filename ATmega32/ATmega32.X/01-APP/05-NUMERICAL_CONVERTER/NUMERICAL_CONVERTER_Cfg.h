@@ -8,16 +8,7 @@
 #ifndef NUMERICAL_CONVERTER_CFG_H
 #define	NUMERICAL_CONVERTER_CFG_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
 
-
-
-
-#ifdef	__cplusplus
-}
-#endif
 
 #endif	/* NUMERICAL_CONVERTER_CFG_H */
 

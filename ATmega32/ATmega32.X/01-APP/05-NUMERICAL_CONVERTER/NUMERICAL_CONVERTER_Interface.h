@@ -1,4 +1,4 @@
-/* 
+/*
  * File:   NUMERICAL_CONVERTER_Interface.h
  * Author: aharbii
  *
@@ -6,18 +6,16 @@
  */
 
 #ifndef NUMERICAL_CONVERTER_INTERFACE_H
-#define	NUMERICAL_CONVERTER_INTERFACE_H
+#define NUMERICAL_CONVERTER_INTERFACE_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
+#define F_CPU 8000000
+#include <util/delay.h>
 
+#include "StdTypes.h"
+#include "LCD_Interface.h"
+#include "KEYPAD_Interface.h"
 
+extern void NUMERICAL_CONVERTER_Init(void);
+extern void NUMERICAL_CONVERTER_Runnable(void);
 
-
-#ifdef	__cplusplus
-}
-#endif
-
-#endif	/* NUMERICAL_CONVERTER_INTERFACE_H */
-
+#endif /* NUMERICAL_CONVERTER_INTERFACE_H */
