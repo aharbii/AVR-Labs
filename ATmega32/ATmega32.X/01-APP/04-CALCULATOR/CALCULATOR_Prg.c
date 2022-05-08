@@ -2,8 +2,8 @@
 #include "CALCULATOR_Private.h"
 #include "CALCULATOR_Cfg.h"
 
-static const u8 multiplication_pattern[8] = {0x00, 0x00, 0x00, 0x11, 0x0A, 0x04, 0x0A, 0x11};
-static const u8 division_pattern[8] = {0x00, 0x00, 0x00, 0x00, 0x04, 0x0E, 0x04, 0x00};
+static const u8 multiplication_pattern[8] = {0x00, 0x00, 0x11, 0x0A, 0x04, 0x0A, 0x11, 0x00};
+static const u8 division_pattern[8] = {0x00, 0x00, 0x04, 0x00, 0x0E, 0x00, 0x04, 0x00};
 
 static const u8 multiplication_ascii = 2;
 static const u8 division_ascii = 3;
@@ -60,6 +60,14 @@ void CALCULATOR_Runnable(void)
                     {
                         operation[operation_idx++] = second_operand_str[i];
                     }
+                    operation[operation_idx] = NULL_CHARACTER;
+                    for (u8 i = 0; i < 16; i++)
+                    {
+                        LCD_ClearLocation(0, i);
+                    }
+                    LCD_SetCursor(0, 0);
+                    LCD_WriteString(operation);
+                    
                 }
             }
             operation[operation_idx] = NULL_CHARACTER;
