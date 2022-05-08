@@ -1,0 +1,1041 @@
+Archive member included to satisfy reference by file (symbol)
+
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__subsf3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__divsf3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o) (__divsf3x)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__fixsfsi)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o) (__fixunssfsi)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__floatsisf)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__mulsf3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+                              build/default/production/03-HAL/05-LCD/LCD_Prg.o (__udivmodhi4)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__divmodsi4)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o) (__negsi2)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                              /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o (exit)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+                              build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o (__do_copy_data)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+                              build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o (__do_clear_bss)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+                              build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o (__mulhisi3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                              build/default/production/03-HAL/05-LCD/LCD_Prg.o (__umulhisi3)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o) (__usmulhisi3_tail)
+/Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                              /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o) (__udivmodsi4)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+ .bss           0x0000000000000000        0x0 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .text.reset    0x0000000000000000       0x38 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .text.STOP_WATCH_Init
+                0x0000000000000000       0x14 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .text.STOP_WATCH_Runnable
+                0x0000000000000000      0x110 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .data.time     0x0000000000000000        0x1 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .data.start_time
+                0x0000000000000000        0x1 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .bss.state     0x0000000000000000        0x1 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/02-CAR/CAR.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/02-CAR/CAR.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/02-CAR/CAR.o
+ .text.move_forward
+                0x0000000000000000       0x1a build/default/production/01-APP/02-CAR/CAR.o
+ .text.move_backward
+                0x0000000000000000       0x1a build/default/production/01-APP/02-CAR/CAR.o
+ .text.move_left
+                0x0000000000000000       0x1a build/default/production/01-APP/02-CAR/CAR.o
+ .text.move_right
+                0x0000000000000000       0x1a build/default/production/01-APP/02-CAR/CAR.o
+ .text.stop     0x0000000000000000       0x1a build/default/production/01-APP/02-CAR/CAR.o
+ .text.CAR_Init
+                0x0000000000000000        0x6 build/default/production/01-APP/02-CAR/CAR.o
+ .text.CAR_Runnable
+                0x0000000000000000       0xe2 build/default/production/01-APP/02-CAR/CAR.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/02-CAR/CAR.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text.LCD_GAMES_Init
+                0x0000000000000000       0x1a build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text.LCD_GAMES_ArrowKilling_Init
+                0x0000000000000000       0x1e build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text.LCD_GAMES_ArrowKilling_Runnable
+                0x0000000000000000       0x64 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text.LCD_GAMES_MoveMan_Init
+                0x0000000000000000       0x1a build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text.LCD_GAMES_MoveMan_Runnable
+                0x0000000000000000       0xf6 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .bss.man_line  0x0000000000000000        0x1 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .bss.man_cell  0x0000000000000000        0x1 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .rodata.dead_man_pattern
+                0x0000000000000000        0x8 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .rodata.alive_man_pattern
+                0x0000000000000000        0x8 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/01-LED/LED_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text.LED_Init
+                0x0000000000000000        0x2 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text.LED_OnActiveHigh
+                0x0000000000000000        0x8 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text.LED_OffActiveHigh
+                0x0000000000000000        0x8 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text.LED_OnActiveLow
+                0x0000000000000000        0x8 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text.LED_OffActiveLow
+                0x0000000000000000        0x8 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/01-LED/LED_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_Init
+                0x0000000000000000        0x2 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadClick_PullUp
+                0x0000000000000000       0x34 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadClick_PullDown
+                0x0000000000000000       0x34 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadState_PullUp
+                0x0000000000000000        0xe build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadState_PullDown
+                0x0000000000000000       0x10 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadClick_PullUp_Polling
+                0x0000000000000000       0x44 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text.BUTTON_ReadClick_PullDown_Polling
+                0x0000000000000000       0x44 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/02-BUTTON/BUTTON_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/02-BUTTON/BUTTON_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+ .rodata.segment_map
+                0x0000000000000000        0xa build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .text.SEVEN_SEGMENT_Display
+                0x0000000000000000      0x196 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .text.SEVEN_SEGMENT_Init
+                0x0000000000000000        0x8 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .text.MOTOR_Init
+                0x0000000000000000        0x2 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .text.MOTOR_CW
+                0x0000000000000000       0x26 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .text.MOTOR_CCW
+                0x0000000000000000       0x26 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .text.MOTOR_Stop
+                0x0000000000000000       0x26 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+ .rodata.MotorPinsArray
+                0x0000000000000000        0x8 build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.DecrementCursor
+                0x0000000000000000       0x34 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteNumber
+                0x0000000000000000      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteBinary
+                0x0000000000000000       0x70 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteBinary_8B
+                0x0000000000000000       0x34 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .rodata.str1.1
+                0x0000000000000000        0x3 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .rodata        0x0000000000000000       0x10 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteHex
+                0x0000000000000000       0x72 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteNumber_4D
+                0x0000000000000000       0x6c build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_ClearLast
+                0x0000000000000000       0x2a build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_WriteFloat
+                0x0000000000000000       0x60 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/05-LCD/LCD_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/05-LCD/LCD_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text.BUZZER_Init
+                0x0000000000000000        0x2 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text.BUZZER_OnActiveHigh
+                0x0000000000000000        0x8 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text.BUZZER_OffActiveHigh
+                0x0000000000000000        0x8 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text.BUZZER_OnActiveLow
+                0x0000000000000000        0x8 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text.BUZZER_OffActiveLow
+                0x0000000000000000        0x8 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/06-BUZZER/BUZZER_Cfg.o
+ .comment       0x0000000000000000       0x30 build/default/production/03-HAL/06-BUZZER/BUZZER_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .data          0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .bss           0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .text.DIO_TogglePin
+                0x0000000000000000       0x82 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .text.DIO_WritePort
+                0x0000000000000000       0x20 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .text.DIO_ReadPort
+                0x0000000000000000       0x24 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .text          0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+ .data          0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+ .bss           0x0000000000000000        0x0 build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+ .text          0x0000000000000000        0x0 build/default/production/main.o
+ .data          0x0000000000000000        0x0 build/default/production/main.o
+ .bss           0x0000000000000000        0x0 build/default/production/main.o
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x0000000000000000       0x28 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+ .text          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000008000 xr
+data             0x0000000000800060 0x0000000000000800 rw !x
+eeprom           0x0000000000810000 0x0000000000000400 rw !x
+fuse             0x0000000000820000 0x0000000000000002 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+LOAD build/default/production/01-APP/01-STOP_WATCH/STOP_WATCH.o
+LOAD build/default/production/01-APP/02-CAR/CAR.o
+LOAD build/default/production/01-APP/03-LCD_GAMES/LCD_GAMES.o
+LOAD build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Cfg.o
+LOAD build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+LOAD build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+LOAD build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Cfg.o
+LOAD build/default/production/03-HAL/01-LED/LED_Cfg.o
+LOAD build/default/production/03-HAL/01-LED/LED_Prg.o
+LOAD build/default/production/03-HAL/02-BUTTON/BUTTON_Prg.o
+LOAD build/default/production/03-HAL/02-BUTTON/BUTTON_Cfg.o
+LOAD build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Cfg.o
+LOAD build/default/production/03-HAL/03-SEVEN_SEGMENT/SEVEN_SEGMENT_Prg.o
+LOAD build/default/production/03-HAL/04-MOTOR/MOTOR_Prg.o
+LOAD build/default/production/03-HAL/04-MOTOR/MOTOR_Cfg.o
+LOAD build/default/production/03-HAL/05-LCD/LCD_Prg.o
+LOAD build/default/production/03-HAL/05-LCD/LCD_Cfg.o
+LOAD build/default/production/03-HAL/06-BUZZER/BUZZER_Prg.o
+LOAD build/default/production/03-HAL/06-BUZZER/BUZZER_Cfg.o
+LOAD build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+LOAD build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+LOAD build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+LOAD build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+LOAD build/default/production/main.o
+                0x0000000000000001                __MPLAB_BUILD = 0x1
+START GROUP
+LOAD /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a
+END GROUP
+START GROUP
+LOAD /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a
+LOAD /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a
+LOAD /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libc.a
+LOAD /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/libatmega32.a
+END GROUP
+                0x0000000000000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x0000000000800060]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x0000000000008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x0000000000000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x0000000000000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x164e
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000054                . = ALIGN (0x2)
+                0x0000000000000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000054        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000054                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x0000000000000054                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000054                __ctors_start = .
+ *(.ctors)
+                0x0000000000000054                __ctors_end = .
+                0x0000000000000054                __dtors_start = .
+ *(.dtors)
+                0x0000000000000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000054        0x0 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x0000000000000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000054        0xc /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000060       0x16 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
+                0x0000000000000060                __do_copy_data
+ .init4         0x0000000000000076       0x10 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000000000000086        0x8 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+ *(.init9)
+ *(.text)
+ .text          0x000000000000008e        0x4 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+                0x000000000000008e                __vector_20
+                0x000000000000008e                __vector_12
+                0x000000000000008e                __bad_interrupt
+                0x000000000000008e                __vector_6
+                0x000000000000008e                __vector_3
+                0x000000000000008e                __vector_11
+                0x000000000000008e                __vector_13
+                0x000000000000008e                __vector_17
+                0x000000000000008e                __vector_19
+                0x000000000000008e                __vector_7
+                0x000000000000008e                __vector_5
+                0x000000000000008e                __vector_4
+                0x000000000000008e                __vector_9
+                0x000000000000008e                __vector_2
+                0x000000000000008e                __vector_15
+                0x000000000000008e                __vector_8
+                0x000000000000008e                __vector_14
+                0x000000000000008e                __vector_10
+                0x000000000000008e                __vector_16
+                0x000000000000008e                __vector_18
+                0x000000000000008e                __vector_1
+                0x0000000000000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.calculator_reset
+                0x0000000000000092       0x26 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.string_len
+                0x00000000000000b8       0x1e build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.string_to_int
+                0x00000000000000d6       0x8e build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.string_copy
+                0x0000000000000164       0x3a build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.string_concatenate
+                0x000000000000019e       0x4c build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.int_to_string
+                0x00000000000001ea      0x11e build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .text.CALCULATOR_Init
+                0x0000000000000308       0x88 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+                0x0000000000000308                CALCULATOR_Init
+ .text.CALCULATOR_Runnable
+                0x0000000000000390      0x576 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+                0x0000000000000390                CALCULATOR_Runnable
+ .text.WriteInstruction
+                0x0000000000000906       0xd4 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_Clear
+                0x00000000000009da       0x1c build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x00000000000009da                LCD_Clear
+ .text.LCD_SetCursor
+                0x00000000000009f6       0x2c build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x00000000000009f6                LCD_SetCursor
+ .text.WriteData
+                0x0000000000000a22      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .text.LCD_Init
+                0x0000000000000b3c       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000b3c                LCD_Init
+ .text.LCD_WriteChar
+                0x0000000000000bf6        0x8 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000bf6                LCD_WriteChar
+ .text.LCD_WriteString
+                0x0000000000000bfe       0x30 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000bfe                LCD_WriteString
+ .text.LCD_ClearLocation
+                0x0000000000000c2e       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000c2e                LCD_ClearLocation
+ .text.LCD_SetPattern
+                0x0000000000000ce8       0x54 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000ce8                LCD_SetPattern
+ .text.KEYPAD_Init
+                0x0000000000000d3c        0x2 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+                0x0000000000000d3c                KEYPAD_Init
+ .text.KEYPAD_GetEntry
+                0x0000000000000d3e       0xd8 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+                0x0000000000000d3e                KEYPAD_GetEntry
+ .text.DIO_Init
+                0x0000000000000e16      0x1d0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x0000000000000e16                DIO_Init
+ .text.DIO_WritePin
+                0x0000000000000fe6      0x10a build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x0000000000000fe6                DIO_WritePin
+ .text.DIO_ReadPin
+                0x00000000000010f0       0x66 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x00000000000010f0                DIO_ReadPin
+ .text.main     0x0000000000001156       0x16 build/default/production/main.o
+                0x0000000000001156                main
+ .text.avr-libc.fplib
+                0x000000000000116c        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x000000000000116c                __subsf3
+                0x000000000000116e                __addsf3
+ .text.avr-libc.fplib
+                0x000000000000117a       0xcc /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x000000000000119c                __addsf3x
+ .text.avr-libc.fplib
+                0x0000000000001246        0x8 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x0000000000001246                __divsf3
+ .text.avr-libc.fplib
+                0x000000000000124e       0xdc /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x000000000000126e                __divsf3x
+                0x0000000000001274                __divsf3_pse
+ .text.avr-libc.fplib
+                0x000000000000132a        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x000000000000132a                __fixsfsi
+ .text.avr-libc.fplib
+                0x0000000000001338       0x5e /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x0000000000001338                __fixunssfsi
+ .text.avr-libc.fplib
+                0x0000000000001396       0x7a /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x0000000000001396                __floatunsisf
+                0x000000000000139a                __floatsisf
+ .text.avr-libc.fplib
+                0x0000000000001410        0xc /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000000000001410                __fp_inf
+ .text.avr-libc.fplib
+                0x000000000000141c        0x6 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x000000000000141c                __fp_nan
+ .text.avr-libc.fplib
+                0x0000000000001422        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000000000001422                __fp_pscA
+ .text.avr-libc.fplib
+                0x0000000000001430        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000000000001430                __fp_pscB
+ .text.avr-libc.fplib
+                0x000000000000143e       0x22 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x000000000000143e                __fp_round
+ .text.avr-libc.fplib
+                0x0000000000001460       0x44 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000000000001460                __fp_split3
+                0x0000000000001470                __fp_splitA
+ .text.avr-libc.fplib
+                0x00000000000014a4        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x00000000000014a4                __fp_zero
+                0x00000000000014a6                __fp_szero
+ .text.avr-libc.fplib
+                0x00000000000014b2        0x8 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x00000000000014b2                __mulsf3
+ .text.avr-libc.fplib
+                0x00000000000014ba       0xd2 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00000000000014d8                __mulsf3x
+                0x00000000000014de                __mulsf3_pse
+ .text.libgcc.div
+                0x000000000000158c       0x2e /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+                0x000000000000158c                __divmodsi4
+ .text.libgcc.div
+                0x00000000000015ba       0x10 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+                0x00000000000015ba                __negsi2
+ .text.libgcc.mul
+                0x00000000000015ca       0x10 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_mulhisi3.o)
+                0x00000000000015ca                __mulhisi3
+ .text.libgcc.mul
+                0x00000000000015da       0x1e /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_umulhisi3.o)
+                0x00000000000015da                __umulhisi3
+ .text.libgcc.mul
+                0x00000000000015f8        0xe /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_usmulhisi3.o)
+                0x00000000000015f8                __usmulhisi3
+                0x00000000000015fc                __usmulhisi3_tail
+ .text.libgcc.div
+                0x0000000000001606       0x44 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000001606                __udivmodsi4
+                0x000000000000164a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000164a        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x000000000000164a                exit
+                0x000000000000164a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000164a        0x4 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000000164e                _etext = .
+
+.data           0x0000000000800060       0x6a load address 0x000000000000164e
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800060       0x19 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+                                         0x1b (size before relaxing)
+ .rodata.division_pattern
+                0x0000000000800079        0x8 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .rodata.multiplication_pattern
+                0x0000000000800081        0x8 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .rodata.null_pattern
+                0x0000000000800089        0x8 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .rodata.KeypadInputPins
+                0x0000000000800091        0x4 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+                0x0000000000800091                KeypadInputPins
+ .rodata.KeypadOutputPins
+                0x0000000000800095        0x4 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+                0x0000000000800095                KeypadOutputPins
+ .rodata.KeypadKeys
+                0x0000000000800099       0x10 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+                0x0000000000800099                KeypadKeys
+ .rodata.PinsModeArray
+                0x00000000008000a9       0x20 build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+                0x00000000008000a9                PinsModeArray
+ *(.gnu.linkonce.r*)
+                0x00000000008000ca                . = ALIGN (0x2)
+ *fill*         0x00000000008000c9        0x1 
+                0x00000000008000ca                _edata = .
+                0x00000000008000ca                PROVIDE (__data_end, .)
+
+.bss            0x00000000008000ca       0x2e
+                0x00000000008000ca                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.mode      0x00000000008000ca        0x1 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+                0x00000000008000ca                mode
+ .bss.pre_second_operand
+                0x00000000008000cb        0x2 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.pre_operator
+                0x00000000008000cd        0x1 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.pre_key   0x00000000008000ce        0x1 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.operation_idx
+                0x00000000008000cf        0x1 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.answer    0x00000000008000d0       0x10 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.operation
+                0x00000000008000e0       0x10 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.operator  0x00000000008000f0        0x1 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.second_operand
+                0x00000000008000f1        0x2 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.first_operand
+                0x00000000008000f3        0x2 build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+ .bss.saved_patterns
+                0x00000000008000f5        0x1 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .bss.line      0x00000000008000f6        0x1 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .bss.cell      0x00000000008000f7        0x1 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ *(COMMON)
+                0x00000000008000f8                PROVIDE (__bss_end, .)
+                0x000000000000164e                __data_load_start = LOADADDR (.data)
+                0x00000000000016b8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008000f8        0x0
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x00000000008000f8                _end = .
+                [!provide]                        PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2f
+ *(.comment)
+ .comment       0x0000000000000000       0x2f build/default/production/01-APP/04-CALCULATOR/CALCULATOR_Prg.o
+                                         0x30 (size before relaxing)
+ .comment       0x000000000000002f       0x30 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+ .comment       0x000000000000002f       0x30 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+ .comment       0x000000000000002f       0x30 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Cfg.o
+ .comment       0x000000000000002f       0x30 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+ .comment       0x000000000000002f       0x30 build/default/production/04-MCAL/01-DIO/DIO_Cfg.o
+ .comment       0x000000000000002f       0x30 build/default/production/main.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x4e6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4e6 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+
+.debug_abbrev   0x0000000000000000      0x4a3
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x4a3 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+
+.debug_line     0x0000000000000000      0x116
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x116 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000      0x196
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x196 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(dist/default/production/ATmega32.X.production.elf elf32-avr)
+LOAD linker stubs
