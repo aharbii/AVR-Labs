@@ -14,6 +14,14 @@ Drivers for ATmega32 microcontroller implemented in C programming language
 The application layer includes various application specific software components that are designed to execute specific set of tasks, as per the use-case.
 ```
 
+Implemented Applications:
+
+* Stopwatch: Using 7-segments and buttons with features of pause/resume, reset, and adjust time.
+* Moveable Car: Using DC-Motors and buttons with features of move forward, backward, turn left, and turn right.
+* LCD Games: Using 4-Bit Character LCD and Buttons
+* Calculator: Using 4-Bit Character LCD and Keypad with features of addition, subtraction, multiplication and division. Handled division by zero, float result of division with 6 digits precision, continuous operations with the last answer [rounded], and repeated operations with '=' button.
+* Numerical Converter: Using 4-Bit Character LCD and Keypad with features of convert to/from Decimal/Binary/Hexadecimal with simple interactive user interface. Can handle unsigned 8-bit integers.
+
 ### HAL
 
 ```text
@@ -27,6 +35,8 @@ Implemented HAL Drivers:
 * 7-Segment
 * DC-Motor
 * Character LCD
+* Buzzer
+* Keypad
 
 ### MCAL
 
