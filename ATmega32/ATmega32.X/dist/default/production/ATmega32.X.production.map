@@ -691,7 +691,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x0000000000000000     0x1494
+.text           0x0000000000000000     0x14dc
  *(.vectors)
  .vectors       0x0000000000000000       0x54 /Users/aharbii/.mchp_packs/Microchip/ATmega_DFP/3.0.158/gcc/dev/atmega32/avr5/crtatmega32.o
                 0x0000000000000000                __vectors
@@ -782,82 +782,82 @@ END GROUP
  .text.get_decimal
                 0x000000000000015c       0x22 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
  .text.menu_display
-                0x000000000000017e      0x268 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
- .text.get_hex  0x00000000000003e6      0x148 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+                0x000000000000017e      0x2b0 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+ .text.get_hex  0x000000000000042e      0x148 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
  .text.get_binary
-                0x000000000000052e       0x4a build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+                0x0000000000000576       0x4a build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
  .text.hex_to_int
-                0x0000000000000578       0x54 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+                0x00000000000005c0       0x54 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
  .text.NUMERICAL_CONVERTER_Init
-                0x00000000000005cc       0xb2 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
-                0x00000000000005cc                NUMERICAL_CONVERTER_Init
+                0x0000000000000614       0xb2 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+                0x0000000000000614                NUMERICAL_CONVERTER_Init
  .text.NUMERICAL_CONVERTER_Runnable
-                0x000000000000067e      0x3b2 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
-                0x000000000000067e                NUMERICAL_CONVERTER_Runnable
+                0x00000000000006c6      0x3b2 build/default/production/01-APP/05-NUMERICAL_CONVERTER/NUMERICAL_CONVERTER_Prg.o
+                0x00000000000006c6                NUMERICAL_CONVERTER_Runnable
  .text.WriteInstruction
-                0x0000000000000a30       0xd4 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000a78       0xd4 build/default/production/03-HAL/05-LCD/LCD_Prg.o
  .text.LCD_Clear
-                0x0000000000000b04       0x1c build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000b04                LCD_Clear
+                0x0000000000000b4c       0x1c build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000b4c                LCD_Clear
  .text.LCD_SetCursor
-                0x0000000000000b20       0x2c build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000b20                LCD_SetCursor
+                0x0000000000000b68       0x2c build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000b68                LCD_SetCursor
  .text.WriteData
-                0x0000000000000b4c      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000b94      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
  .text.LCD_Init
-                0x0000000000000c66       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000c66                LCD_Init
+                0x0000000000000cae       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000cae                LCD_Init
  .text.LCD_WriteChar
-                0x0000000000000d20        0x8 build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000d20                LCD_WriteChar
+                0x0000000000000d68        0x8 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000d68                LCD_WriteChar
  .text.LCD_WriteNumber
-                0x0000000000000d28      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000d28                LCD_WriteNumber
+                0x0000000000000d70      0x11a build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000d70                LCD_WriteNumber
  .text.LCD_WriteString
-                0x0000000000000e42       0x30 build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000e42                LCD_WriteString
+                0x0000000000000e8a       0x30 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000e8a                LCD_WriteString
  .text.LCD_WriteBinary_8B
-                0x0000000000000e72       0x34 build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000e72                LCD_WriteBinary_8B
+                0x0000000000000eba       0x34 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000eba                LCD_WriteBinary_8B
  .text.LCD_WriteHex
-                0x0000000000000ea6       0x72 build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000ea6                LCD_WriteHex
+                0x0000000000000eee       0x72 build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000eee                LCD_WriteHex
  .text.LCD_ClearLocation
-                0x0000000000000f18       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
-                0x0000000000000f18                LCD_ClearLocation
+                0x0000000000000f60       0xba build/default/production/03-HAL/05-LCD/LCD_Prg.o
+                0x0000000000000f60                LCD_ClearLocation
  .text.KEYPAD_Init
-                0x0000000000000fd2        0x2 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
-                0x0000000000000fd2                KEYPAD_Init
+                0x000000000000101a        0x2 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+                0x000000000000101a                KEYPAD_Init
  .text.KEYPAD_GetEntry
-                0x0000000000000fd4       0xd8 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
-                0x0000000000000fd4                KEYPAD_GetEntry
+                0x000000000000101c       0xd8 build/default/production/03-HAL/07-KEYPAD/KEYPAD_Prg.o
+                0x000000000000101c                KEYPAD_GetEntry
  .text.DIO_Init
-                0x00000000000010ac      0x1d0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
-                0x00000000000010ac                DIO_Init
+                0x00000000000010f4      0x1d0 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x00000000000010f4                DIO_Init
  .text.DIO_WritePin
-                0x000000000000127c      0x10a build/default/production/04-MCAL/01-DIO/DIO_Prg.o
-                0x000000000000127c                DIO_WritePin
+                0x00000000000012c4      0x10a build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x00000000000012c4                DIO_WritePin
  .text.DIO_ReadPin
-                0x0000000000001386       0x66 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
-                0x0000000000001386                DIO_ReadPin
- .text.main     0x00000000000013ec       0x16 build/default/production/main.o
-                0x00000000000013ec                main
+                0x00000000000013ce       0x66 build/default/production/04-MCAL/01-DIO/DIO_Prg.o
+                0x00000000000013ce                DIO_ReadPin
+ .text.main     0x0000000000001434       0x16 build/default/production/main.o
+                0x0000000000001434                main
  .text.libgcc.div
-                0x0000000000001402       0x2e /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
-                0x0000000000001402                __divmodsi4
+                0x000000000000144a       0x2e /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_divmodsi4.o)
+                0x000000000000144a                __divmodsi4
  .text.libgcc.div
-                0x0000000000001430       0x10 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
-                0x0000000000001430                __negsi2
- .text.libgcc   0x0000000000001440        0xc /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
-                0x0000000000001440                __tablejump2__
+                0x0000000000001478       0x10 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_negsi2.o)
+                0x0000000000001478                __negsi2
+ .text.libgcc   0x0000000000001488        0xc /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_tablejump2.o)
+                0x0000000000001488                __tablejump2__
  .text.libgcc.div
-                0x000000000000144c       0x44 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
-                0x000000000000144c                __udivmodsi4
-                0x0000000000001490                . = ALIGN (0x2)
+                0x0000000000001494       0x44 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000000000001494                __udivmodsi4
+                0x00000000000014d8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000000000001490        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
-                0x0000000000001490                exit
-                0x0000000000001490                _exit
+ .fini9         0x00000000000014d8        0x0 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+                0x00000000000014d8                exit
+                0x00000000000014d8                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -876,11 +876,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000000000001490        0x4 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
+ .fini0         0x00000000000014d8        0x4 /Applications/microchip/avr8/bin/../lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x0000000000001494                _etext = .
+                0x00000000000014dc                _etext = .
 
-.data           0x0000000000800060      0x10c load address 0x0000000000001494
+.data           0x0000000000800060      0x10c load address 0x00000000000014dc
                 0x0000000000800060                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -949,8 +949,8 @@ END GROUP
  .bss.cell      0x000000000080017c        0x1 build/default/production/03-HAL/05-LCD/LCD_Prg.o
  *(COMMON)
                 0x000000000080017d                PROVIDE (__bss_end, .)
-                0x0000000000001494                __data_load_start = LOADADDR (.data)
-                0x00000000000015a0                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000000000014dc                __data_load_start = LOADADDR (.data)
+                0x00000000000015e8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x000000000080017d        0x0
                 [!provide]                        PROVIDE (__noinit_start, .)

@@ -1,0 +1,1 @@
+cd "/Users/aharbii/Data/Embedded Systems/Embedded Systems Diploma/09. Interfacing/ATmega32/ATmega32.X/dist/default/production/" && avrdude -p m32 -c usbasp -P /dev/cu.usbserial-140 -u -Uflash:w:ATmega32.X.production.hex:a

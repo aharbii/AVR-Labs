@@ -238,10 +238,28 @@ static void menu_display(void)
         switch (direction)
         {
         case DOWN:
-            LCD_ClearLocation(0, 1);
-            LCD_SetCursor(1, 1);
-            LCD_WriteChar(ARROW_ASCII);
-            arrow_pos = 1;
+            switch (arrow_pos)
+            {
+            case 0:
+                LCD_ClearLocation(0, 1);
+                LCD_SetCursor(1, 1);
+                LCD_WriteChar(ARROW_ASCII);
+                arrow_pos = 1;
+                break;
+            case 1:
+                LCD_Clear();
+                LCD_SetCursor(0, 2);
+                LCD_WriteString((u8 *)modes_menu[4]);
+                LCD_SetCursor(1, 1);
+                LCD_WriteChar(ARROW_ASCII);
+                arrow_pos = 1;
+                LCD_SetCursor(1, 2);
+                LCD_WriteString((u8 *)modes_menu[5]);
+                break;
+            default:
+                break;
+            }
+            
             break;
         case UP:
             LCD_Clear();
