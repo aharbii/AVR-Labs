@@ -1,0 +1,66 @@
+/*
+ * File:   main.c
+ * Author: aharbii
+ *
+ * Created on April 29, 2022, 8:27 PM
+ */
+
+#define F_CPU 8000000
+#include <util/delay.h>
+
+#include "MemMap.h"
+#include "StdTypes.h"
+#include "Utils.h"
+
+#include "DIO_Interface.h"
+#include "ADC_Interface.h"
+
+#include "LED_Interface.h"
+#include "BUTTON_Interface.h"
+#include "SEVEN_SEGMENT_Interface.h"
+#include "MOTOR_Interface.h"
+#include "LCD_Interface.h"
+#include "KEYPAD_Interface.h"
+
+#include "CAR.h"
+#include "STOP_WATCH.h"
+#include "LCD_GAMES.h"
+#include "CALCULATOR_Interface.h"
+#include "NUMERICAL_CONVERTER_Interface.h"
+
+#define VREF 5
+
+int main(void)
+{
+    DIO_Init();
+    ADC_Init();
+
+    LCD_Init();
+
+    u16 adc_pre = 0;
+    while (1)
+    {
+        u16 adc = ADC_Read(CH_7);
+        f96 v_in = ((f96)adc * VREF) / 1024;
+        if (adc != adc_pre)
+        {
+            for (u8 i = 5; i < 16; i++)
+            {
+                LCD_ClearLocation(0, i);
+            }
+            for (u8 i = 5; i < 16; i++)
+            {
+                LCD_ClearLocation(1, i);
+            }
+        }
+        LCD_SetCursor(0, 0);
+        LCD_WriteString((u8 *)"ADC: ");
+        LCD_WriteNumber(adc);
+        LCD_SetCursor(1, 0);
+        LCD_WriteString((u8 *)"Vin: ");
+        LCD_WriteFloat(v_in);
+
+        _delay_ms(2000);
+        adc_pre = adc;
+    }
+}

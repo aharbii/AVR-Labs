@@ -17,15 +17,15 @@ const DIO_PinMode_type PinsModeArray[TOTAL_PINS]=
 	LCD_PIN,      /* Port A Pin 4 */
 	LCD_PIN,      /* Port A Pin 5 */
 	LCD_PIN,      /* Port A Pin 6 */
-	OUTPUT,      /* Port A Pin 7 ADC7*/
-	OUTPUT,      /* Port B Pin 0   / */
-	OUTPUT,      /* Port B Pin 1   /*/
-	OUTPUT,		 /* Port B Pin 2 / INT2*/
-	OUTPUT,		 /* Port B Pin 3   /OC0*/
-	KEYPAD_OUTPUT_PIN,		 /* Port B Pin 4 /ss*/
-	KEYPAD_OUTPUT_PIN,		 /* Port B Pin 5 //mosi*/
-	KEYPAD_OUTPUT_PIN,		 /* Port B Pin 6 /miso*/
-	KEYPAD_OUTPUT_PIN,		 /* Port B Pin 7 clk*/
+	LDR_SENSOR_PIN,      /* Port A Pin 7 ADC7*/
+	LED_PIN,      /* Port B Pin 0   / */
+	LED_PIN,      /* Port B Pin 1   /*/
+	LED_PIN,		 /* Port B Pin 2 / INT2*/
+	LED_PIN,		 /* Port B Pin 3   /OC0*/
+	LED_PIN,		 /* Port B Pin 4 /ss*/
+	LED_PIN,		 /* Port B Pin 5 //mosi*/
+	LED_PIN,		 /* Port B Pin 6 /miso*/
+	LED_PIN,		 /* Port B Pin 7 clk*/
 	OUTPUT,		 /* Port C Pin 0 */
 	OUTPUT,		 /* Port C Pin 1 */
 	OUTPUT,		 /* Port C Pin 2 */

@@ -27,6 +27,9 @@
 #define KEYPAD_OUTPUT_PIN OUTPUT
 #define KEYPAD_INPUT_PIN INPULL
 
+#define VIN_PIN INFREE
+#define LDR_SENSOR_PIN INFREE
+
 #endif	/* DIO_CFG_H */
 
 
