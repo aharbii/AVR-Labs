@@ -11,5 +11,7 @@
 extern const DIO_PinMode_type PinsModeArray[TOTAL_PINS];
 static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode);
 
+#define PORT_PINS_NUM 8
+
 #endif	/* DIO_PRIVATE_H */
 

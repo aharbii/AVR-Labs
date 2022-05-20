@@ -14,7 +14,7 @@
 
 typedef enum
 {
-    CH_0,
+    CH_0 = 0,
     CH_1,
     CH_2,
     CH_3,

@@ -21,6 +21,9 @@ Implemented Applications:
 * LCD Games: Using 4-Bit Character LCD and Buttons
 * Calculator: Using 4-Bit Character LCD and Keypad with features of addition, subtraction, multiplication and division. Handled division by zero, float result of division with 6 digits precision, continuous operations with the last answer [rounded], and repeated operations with '=' button.
 * Numerical Converter: Using 4-Bit Character LCD and Keypad with features of convert to/from Decimal/Binary/Hexadecimal with simple interactive user interface. Can handle unsigned 8-bit integers.
+* Volume Controller: Simulating volume control GUI using potentiometer and 4-Bit Character LCD.
+* Fire Fighting: Using LM35 temperature sensor, MQ2 Smoke Sensor, DC-Motor Fan, LEDs, Buzzer and 4-Bit Character LCD with features of Estimate mean filtered temperature, display weather information, start detecting smoke state within certain temperature threshold, Yellow led indication in case of safe heat weather, Red led, buzzer and Auto running fan in case of fire, with configured hysteresis.
+* Filtered Temperature: MEAN filtered temperature math library.
 
 ### HAL
 
@@ -37,6 +40,7 @@ Implemented HAL Drivers:
 * Character LCD
 * Buzzer
 * Keypad
+* Sensors (Potentiometer, LM35)
 
 ### MCAL
 
@@ -47,3 +51,4 @@ MCAL is a software module that directly accesses on-chip MCU peripheral modules 
 Implemented MCAL Drivers:
 
 * DIO
+* ADC

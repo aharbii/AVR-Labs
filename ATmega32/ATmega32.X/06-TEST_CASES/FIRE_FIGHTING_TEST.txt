@@ -41,26 +41,14 @@ int main(void)
     ADC_Init();
 
     LED_Init();
-    // BUTTON_Init();
-    // SEVEN_SEGMENT_Init();
     MOTOR_Init();
     LCD_Init();
     BUZZER_Init();
-    // KEYPAD_Init();
     SENSORS_Init();
 
-    // CAR_Init();
-    // STOP_WATCH_Init();
-    // LCD_GAMES_Init();
-    // LCD_GAMES_ArrowKilling_Init();
-    // LCD_GAMES_MoveMan_Init();
-    // CALCULATOR_Init();
-    // NUMERICAL_CONVERTER_Init();
-    VOLUME_CONTROLLER_Init();
-    // FIRE_FIGHTING_Init();
-    // TEMP_Init();
+    FIRE_FIGHTING_Init();
     while (1)
     {
-        VOLUME_CONTROLLER_Runnable();
+        FIRE_FIGHTING_Runnable();
     }
 }

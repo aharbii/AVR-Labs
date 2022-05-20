@@ -29,6 +29,7 @@
 
 #define VIN_PIN INFREE
 #define LDR_SENSOR_PIN INFREE
+#define LM35_TEMP_SENSOR_PIN INFREE
 
 #endif	/* DIO_CFG_H */
 

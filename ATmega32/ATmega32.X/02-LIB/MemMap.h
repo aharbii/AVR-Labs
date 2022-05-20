@@ -21,11 +21,11 @@
 
 /******************* ADC Registers *******************/
 
-#define ADMUX (*((volatile unsigned char *)0x27))
-#define ADCSRA (*((volatile unsigned char *)0x26))
-#define ADCH (*((volatile unsigned char *)0x25))
-#define ADCL (*((volatile unsigned char *)0x24))
-#define ADC  (*((volatile unsigned short *)0x24))
+#define ADMUX   (*((volatile unsigned char *)0x27))
+#define ADCSRA  (*((volatile unsigned char *)0x26))
+#define ADCH    (*((volatile unsigned char *)0x25))
+#define ADCL    (*((volatile unsigned char *)0x24))
+#define ADC     (*((volatile unsigned short *)0x24))
 
 /*****************************************************/
 

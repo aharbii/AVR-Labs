@@ -12,8 +12,8 @@ void DIO_Init(void)
 
 static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode)
 {
-    u8 port = pin/8;
-    u8 pin_num = pin%8;
+    u8 port = pin / PORT_PINS_NUM;
+    u8 pin_num = pin % PORT_PINS_NUM;
     switch(mode)
     {
         case OUTPUT:
@@ -84,8 +84,8 @@ static void InitPin(DIO_Pin_type pin, DIO_PinMode_type mode)
 
 void DIO_WritePin(DIO_Pin_type pin, DIO_PinVoltage_type volt)
 {
-    u8 port = pin/8;
-    u8 pin_num = pin%8;
+    u8 port = pin / PORT_PINS_NUM;
+    u8 pin_num = pin % PORT_PINS_NUM;
     if (volt == HIGH)
     {
         switch(port)
@@ -127,8 +127,8 @@ void DIO_WritePin(DIO_Pin_type pin, DIO_PinVoltage_type volt)
 
 DIO_PinVoltage_type DIO_ReadPin(DIO_Pin_type pin)
 {
-    u8 port = pin/8;
-    u8 pin_num = pin%8;
+    u8 port = pin / PORT_PINS_NUM;
+    u8 pin_num = pin % PORT_PINS_NUM;
     DIO_PinVoltage_type voltage = LOW;
     switch(port)
     {
@@ -150,8 +150,8 @@ DIO_PinVoltage_type DIO_ReadPin(DIO_Pin_type pin)
 
 void DIO_TogglePin(DIO_Pin_type pin)
 {
-    u8 port = pin/8;
-    u8 pin_num = pin%8;
+    u8 port = pin / PORT_PINS_NUM;
+    u8 pin_num = pin % PORT_PINS_NUM;
     switch(port)
     {
         case PA:

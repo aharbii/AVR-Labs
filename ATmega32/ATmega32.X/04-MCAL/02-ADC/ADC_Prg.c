@@ -4,18 +4,13 @@
 
 void ADC_Init(void)
 {
-
     /* Set Prescaler */
     ADCSRA &= ~SCALER_BITS;
-    ADC_Scaler_type scaler = SCALER;
-    scaler &= SCALER_BITS;
-    ADCSRA |= scaler;
+    ADCSRA |= SCALER;
 
     /* Set VREF */
     ADMUX &= ~VREF_BITS;
-    ADC_VoltRef_type v_ref = VREF;
-    v_ref &= VREF_BITS;
-    ADMUX |= v_ref;
+    ADMUX |= VREF;
 
     /* Activate Right Adjust Mode */
     CLR_BIT(ADMUX, ADLAR);
@@ -26,13 +21,14 @@ void ADC_Init(void)
 
 u16 ADC_Read(ADC_Channel_type channel)
 {
+    /* Select ADC Channel */
     ADMUX &= ~CHANNEL_BITS;
     channel &= CHANNEL_BITS;
     ADMUX |= channel;
 
-    SET_BIT(ADCSRA, ADSC);
+    SET_BIT(ADCSRA, ADSC);  /* Start Conversion */
 
-    while (READ_BIT(ADCSRA, ADSC));
-    
-    return ADC;
+    while (READ_BIT(ADCSRA, ADSC)); /* Wait for Conversion */
+
+    return ADC; /* Return ADC Value */
 }

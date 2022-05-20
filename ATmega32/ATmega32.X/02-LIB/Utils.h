@@ -1,14 +1,14 @@
 /******************************************************************************
  * FILE: Utils.h
- * DESCRIPTION:  C header file contains declration and documentation
+ * DESCRIPTION:  C header file contains declaration and documentation
  *               for macros like function that performs bitwise operations
  *               on registers
  *
  *              Bit Masks:
- *                  --> BIT_GET
- *                  --> BIT_SET
- *                  --> BIT_CLEAR
- *                  --> BIT_TOGGLE
+ *                  --> READ_BIT
+ *                  --> SET_BIT
+ *                  --> CLR_BIT
+ *                  --> TOG_BIT
  *
  *              Nibble Masks:
  *                  --> LOW_NIBBLE_GET
@@ -46,7 +46,7 @@
 /* =============== Bit Masks =================== */
 
 /******************************************************************************
- * MACRO: BIT_GET
+ * MACRO: READ_BIT
  * DESCRIPTION:
  *          This macro takes a register value and position of bit to be checked,
  *          and return 1 if this bit is high, or 0 if this bit is low.
@@ -59,7 +59,7 @@
 #define READ_BIT(REG, BIT_NUM) (((REG) >> (BIT_NUM)) & 1)
 
 /******************************************************************************
- * MACRO: BIT_SET
+ * MACRO: SET_BIT
  * DESCRIPTION:
  *          This macro takes a register value and position of bit to be setted,
  *          and set this bit to 1.
@@ -72,7 +72,7 @@
 #define SET_BIT(REG, BIT_NUM) ((REG) |= (1 << (BIT_NUM)))
 
 /******************************************************************************
- * MACRO: BIT_CLEAR
+ * MACRO: CLR_BIT
  * DESCRIPTION:
  *          This macro takes a register value and position of bit to be cleared,
  *          and set this bit to 0.
@@ -85,7 +85,7 @@
 #define CLR_BIT(REG, BIT_NUM) ((REG) &= (~(1 << (BIT_NUM))))
 
 /******************************************************************************
- * MACRO: BIT_TOGGLE
+ * MACRO: TOG_BIT
  * DESCRIPTION:
  *          This macro takes a register value and position of bit to be toggled,
  *          and toggle this bit. (1 --> 0) and (0 --> 1)
