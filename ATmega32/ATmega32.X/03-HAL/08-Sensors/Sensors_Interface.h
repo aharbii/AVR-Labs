@@ -1,12 +1,12 @@
-/* 
+/*
  * File:   Sensors_Interface.h
  * Author: aharbii
- * 
+ *
  * Created on May 14, 2022, 7:54 PM
  */
 
 #ifndef SENSORS_INTERFACE_H
-#define	SENSORS_INTERFACE_H
+#define SENSORS_INTERFACE_H
 
 #include "StdTypes.h"
 #include "ADC_Interface.h"
@@ -21,7 +21,7 @@ extern void SENSORS_Init(void);
  *
  * PARAMETERS:
  *      - void
- * 
+ *
  * RETURN:
  *      - u16 value represents the input voltage in mV.
  ******************************************************************************/
@@ -30,14 +30,14 @@ extern u16 POT_ReadVolt(void);
 /******************************************************************************
  * FUNCTION: POT_ReadPercentage
  * DESCRIPTION:
- *          This function returns the used resistance percentage of a 
+ *          This function returns the used resistance percentage of a
  *          potentiometer.
  *
  * PARAMETERS:
  *      - void
  *
  * RETURN:
- *      - u8 value represents the percentage of the used resistance of a 
+ *      - u8 value represents the percentage of the used resistance of a
  *        potentiometer [1: 100].
  ******************************************************************************/
 extern u8 POT_ReadPercentage(void);
@@ -55,5 +55,17 @@ extern u8 POT_ReadPercentage(void);
  ******************************************************************************/
 extern u16 LM35_ReadTemp(void);
 
-#endif	/* SENSORS_INTERFACE_H */
+/******************************************************************************
+ * FUNCTION: MPX4115_ReadPressure
+ * DESCRIPTION:
+ *          This function returns MPX4115 sensor pressure read in (10 * kPa).
+ *
+ * PARAMETERS:
+ *      - void
+ *
+ * RETURN:
+ *      - u16 value represents the sensor's pressure in (10 * kPa).
+ ******************************************************************************/
+extern u16 MPX4115_ReadPressure(void);
 
+#endif /* SENSORS_INTERFACE_H */

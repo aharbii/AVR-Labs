@@ -18,5 +18,10 @@
 // LM35 Linear step in mV/˚C
 #define LM35_LINEAR_STEP 10
 
+/* MPX4115 Configurations */
+#define MPX4115_LINEAR_SLOPE_x_100000 921566
+#define MPX4115_ADC0 55
+#define MPX4115_PRESSURE0 15
+
 #endif	/* SENSORS_PRIVATE_H */
 
