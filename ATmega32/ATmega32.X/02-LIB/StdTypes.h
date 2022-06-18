@@ -36,7 +36,7 @@ typedef enum
     OK = 0,
     NOT_OK = 4,
     INDEX_OUT_OF_RANGE = 8,
-    NULL_POINTER = 16
+    ACCESS_NULL_POINTER = 16
 } ErrorStatus_t;
 
 typedef enum

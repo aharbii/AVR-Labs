@@ -26,6 +26,9 @@ typedef enum
 
 extern void ADC_Init(void);
 extern u16 ADC_Read(ADC_Channel_type channel);
+extern void ADC_StartConversion(ADC_Channel_type channel);
+extern u16 ADC_GetRead(void);
+extern ErrorStatus_t ADC_ReadPeriodicCheck(u16 *adc);
 
 #endif	/* ADC_INTERFACE_H */
 
